@@ -1,4 +1,4 @@
-🛡️ Malicious Script Detection System
+🛡️ Malicious Script Detector System
 This project focuses on identifying potentially harmful scripts using a range of machine learning and deep learning models. It processes code snippets and classifies them as either malicious or non-malicious, enabling early detection of security threats in web applications or user inputs.
 
 📄 Dataset
